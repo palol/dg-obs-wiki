@@ -1,0 +1,1269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://dg-docs.ole.dev">
+    <title>Digital Garden Docs</title>
+    <link href="https://dg-docs.ole.dev/feed.xml" rel="self" >
+    <link href="https://dg-docs.ole.dev" >
+    <updated>2025-08-26T23:36:16Z</updated>
+    <id>https://dg-docs.ole.dev</id>
+        <entry>
+            <title>
+                Troubleshooting
+                
+            </title>
+            <updated>2023-03-07T09:35:05.381Z</updated>
+            <id>https://dg-docs.ole.dev/troubleshooting/</id>
+            <content type="html">
+                &lt;blockquote&gt;
+&lt;p&gt;[!WARNING] Netlify Issues when deploying a new site&lt;br /&gt;
+As of 21. January 2023 this there are some issues with Netlify, and &amp;quot;Deploy to Netlify&amp;quot; button described in &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/01-getting-started/&quot;&gt;the getting started turorial&lt;/a&gt; won&#39;t create a copy. If that happens you will get an error when trying to deply your site. If this happens, there is a workaround for this step  &lt;a href=&quot;https://github.com/oleeskild/obsidian-digital-garden/issues/167#issuecomment-1399222123&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;available here&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!faq] Vercel/Netlify build fails after &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/06-updating-the-template/&quot;&gt;updating the template&lt;/a&gt;&lt;br /&gt;
+Most of the time this is due to the plugin not being updated before updating the template. Try updating the plugin in Obsidian to the latest version, and then try updating the template again.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/troubleshooting/" >
+        </entry>
+        <entry>
+            <title>
+                06 Updating the template
+                
+            </title>
+            <updated>2023-09-26T19:08:08.004Z</updated>
+            <id>https://dg-docs.ole.dev/getting-started/06-updating-the-template/</id>
+            <content type="html">
+                &lt;h2 id=&quot;updating-the-template&quot; tabindex=&quot;-1&quot;&gt;Updating the template&lt;/h2&gt;
+&lt;p&gt;In the setting menu for the plugin there is, in addition to the previously mentioned settings, a setting with the name &amp;quot;Update site to latest template&amp;quot; with a button saying &amp;quot;Create PR&amp;quot;. Whenever this template receives any updates, this button can be used to update your site. It will create a new branch in your repo with the changes and create a Pull Request to your main branch. The plugin will present you with this URL in the setting view.&lt;/p&gt;
+&lt;p&gt;If you used the &amp;quot;Deploy to Netlify&amp;quot; button, a Netlify bot will build a preview version of your site which you can visit to see that the changes does not contain any breaking changes. The URL should be visible in the PR.&lt;br /&gt;
+When you are ready you can use the &amp;quot;Merge pull request&amp;quot; button on the pull request page to merge the changes into your main branch and make the changes go live.&lt;/p&gt;
+&lt;p&gt;In the future you will be notified with a visual cue whenever there is an update ready. For now you will need to manually check. If you have the latest version, you will be told so.&lt;/p&gt;
+&lt;h3 id=&quot;screenshots-of-the-process&quot; tabindex=&quot;-1&quot;&gt;Screenshots of the process&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/dix4ngy25/image/upload/q_auto/v1673511572/dgdocs/CleanShot_2023-01-11_at_22.06.35_2x_1.png&quot; alt=&quot;Updating the template&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;modifying-the-template-site&quot; tabindex=&quot;-1&quot;&gt;Modifying the template/site&lt;/h2&gt;
+&lt;p&gt;The code for the website is available in the repo you created in step 3 in the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/01-getting-started/&quot;&gt;getting started page&lt;/a&gt;, and this is yours to modify however you want.&lt;/p&gt;
+&lt;p&gt;If you want to make sure your changes doesn&#39;t get overwritten whenever you update the template again, see the following docs for how to apply customization without risking an overwrite on the next update:&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/css-customization/&quot;&gt;CSS Customization&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/adding-custom-components/&quot;&gt;Adding custom components&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/content-customization/&quot;&gt;Content Customization&lt;/a&gt;&lt;br /&gt;
+&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/configure-build-pipeline/&quot;&gt;Configure build pipeline&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/05-other-settings/&quot;&gt;&amp;lt; Prev&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/getting-started/06-updating-the-template/" >
+        </entry>
+        <entry>
+            <title>
+                05 Other Settings
+                
+            </title>
+            <updated>2024-01-17T13:24:12.029Z</updated>
+            <id>https://dg-docs.ole.dev/getting-started/05-other-settings/</id>
+            <content type="html">
+                &lt;h2 id=&quot;slugify-note-url&quot; tabindex=&quot;-1&quot;&gt;Slugify Note URL&lt;/h2&gt;
+&lt;p&gt;The plugin &amp;quot;slugifies&amp;quot; your URLs by default. In essence this means that a note with the path &amp;quot;My Folder/My &lt;a href=&quot;http://note.md/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Note.md&lt;/a&gt;&amp;quot; will get the URL &amp;quot;my-folder/my-note&amp;quot;.&lt;br /&gt;
+You can disable this by turning this setting off.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!faq] Non-English Characters&lt;br /&gt;
+Slugifying the URL causes some non-English characters, like Chinese characters, to disappear. Resulting in all notes getting an empty URL. If you&#39;ve experienced this issue, disabling this setting should fix that.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-12-18%20at%2013.09.33@2x.png&quot; alt=&quot;CleanShot 2022-12-18 at 13.09.33@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;rewrite-paths&quot; tabindex=&quot;-1&quot;&gt;Rewrite Paths&lt;/h2&gt;
+&lt;p&gt;If you want your filepaths in the garden to differ from the vault path, you can add rewrite rules in the &amp;quot;Path Rewrite Rules&amp;quot; section. If, let&#39;s say, I want to change the Getting Started folder to instead be named &amp;quot;Quick Start&amp;quot; in the garden it would look like this:&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-05-23%20at%2022.47.43@2x.png&quot; alt=&quot;CleanShot 2023-05-23 at 22.47.43@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-05-23%20at%2022.48.16@2x.png&quot; alt=&quot;CleanShot 2023-05-23 at 22.48.16@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;After adding this, all affected notes should show up as changed in the publication center, allowing you to update them.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!tip] Protip&lt;br /&gt;
+If you want all your digital garden notes to be in a folder, say &amp;quot;published&amp;quot; in your vault, but appear under the root of your website you can use a rule on the form&amp;quot;published:&amp;quot;. That is the folder path, and a colon not followed by anything. All notes under the folder &amp;quot;published&amp;quot; wil then appear on your website like &amp;quot;&lt;a href=&quot;http://example.com/mynote&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;example.com/mynote&lt;/a&gt;&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;rewrite-path-for-single-note&quot; tabindex=&quot;-1&quot;&gt;Rewrite path for single note.&lt;/h3&gt;
+&lt;p&gt;You can also change the note on a per note basis. Using &lt;code&gt;dg-path&lt;/code&gt; in the frontmatter, you can change where a note should be located in the garden. This will overwrite any rules that may apply to that note.&lt;br /&gt;
+The dg-path property needs the entire filepath you want. For example, if I wanted the &amp;quot;Features&amp;quot; note to instead be located under the &amp;quot;Advanced&amp;quot; folder in the garden I would add the following frontmatter to it:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+dg-path: &amp;quot;Advanced/Features.md&amp;quot;
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;custom-filters&quot; tabindex=&quot;-1&quot;&gt;Custom filters&lt;/h2&gt;
+&lt;p&gt;If you want any of your content to be modified before publishing the note, you can add a filter.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-05-23%20at%2022.50.21@2x.png&quot; alt=&quot;CleanShot 2023-05-23 at 22.50.21@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;For example say you want to hide text that is inside a specific pattern:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;This is some normal text.
+
+::: hidden
+This is some private text that should not be published.
+:::
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You could then add the following filter.&lt;br /&gt;
+&lt;code&gt;:::hidden(.*&#92;n)*?:::&lt;/code&gt;&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-05-23%20at%2022.53.24@2x.png&quot; alt=&quot;CleanShot 2023-05-23 at 22.53.24@2x.png&quot; /&gt;&lt;br /&gt;
+It also supports Regex groups, meaning you can use $1, $2 etc in the replacement string to insert the first and second regex group and so on.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/04-appearance-settings/&quot;&gt;&amp;lt; Prev&lt;/a&gt; | &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/06-updating-the-template/&quot;&gt;Next: Updating the template &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/getting-started/05-other-settings/" >
+        </entry>
+        <entry>
+            <title>
+                04 Appearance Settings
+                
+            </title>
+            <updated>2023-09-21T11:04:28.104Z</updated>
+            <id>https://dg-docs.ole.dev/getting-started/04-appearance-settings/</id>
+            <content type="html">
+                &lt;p&gt;The appearance settings can be accessed in the settings menu:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2013.54.28@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 13.54.28@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;themes&quot; tabindex=&quot;-1&quot;&gt;Themes&lt;/h2&gt;
+&lt;p&gt;Out of the box the digital garden has a simple dark theme applied. But the plugin supports using the community Obsidian themes.&lt;/p&gt;
+&lt;p&gt;All community themes are supported. Some might look better than others. Themes can be selected in the &amp;quot;Theme&amp;quot; dropdown in the appearance settings:&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2013.55.43@2x%201.png&quot; alt=&quot;CleanShot 2022-11-13 at 13.55.43@2x 1.png&quot; /&gt;&lt;br /&gt;
+You can also select if you want the dark or ligth theme. If the theme doesn&#39;t support the base theme you&#39;ve chosen, you will get a notification when applying the setting.&lt;/p&gt;
+&lt;p&gt;When you&#39;re done choosing a theme, click the &amp;quot;Apply settings to site&amp;quot; to make it go live.&lt;/p&gt;
+&lt;h2 id=&quot;sitename&quot; tabindex=&quot;-1&quot;&gt;Sitename&lt;/h2&gt;
+&lt;p&gt;You can set the name of your site in the &amp;quot;Sitename&amp;quot; setting. This will be displayed in the top navbar of your site.&lt;/p&gt;
+&lt;p&gt;Remember to click the &amp;quot;Apply settings to site&amp;quot; button after changing it.&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2013.55.43@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 13.55.43@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;favicon&quot; tabindex=&quot;-1&quot;&gt;Favicon&lt;/h2&gt;
+&lt;p&gt;You can set a custom SVG file as the favicon of your site. This is the icon that is showed in the browser tab before the page title.&lt;/p&gt;
+&lt;p&gt;To do this, put an SVG file somewhere in your vault, and put the path to the SVG file in the &amp;quot;Favicon&amp;quot; setting.&lt;/p&gt;
+&lt;p&gt;Remember to click the &amp;quot;Apply settings to site&amp;quot; button after changing it.&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2013.57.48@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 13.57.48@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;style-settings-plugin&quot; tabindex=&quot;-1&quot;&gt;Style Settings plugin&lt;/h2&gt;
+&lt;p&gt;If you have enabled and applied any custom settings to your theme in Obsidian, using the &lt;a href=&quot;https://github.com/mgmeyers/obsidian-style-settings&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Style Settings Plugin&lt;/a&gt;, a Style Setting Plugin setting should appear at the top of the appearance settings. Clicking the &amp;quot;Apply&amp;quot; button should add your currently applied style settings to your site.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-03-17%20at%2016.26.34.png&quot; alt=&quot;CleanShot 2023-03-17 at 16.26.34.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;timestamps-settings&quot; tabindex=&quot;-1&quot;&gt;Timestamps Settings&lt;/h2&gt;
+&lt;p&gt;Specify whether you want update and/or created time for your notes.&lt;/p&gt;
+&lt;h3 id=&quot;timestamp-format&quot; tabindex=&quot;-1&quot;&gt;Timestamp format&lt;/h3&gt;
+&lt;p&gt;Specify in what format you want the time to be displayed. By default it will be shown like this: &lt;code&gt;Jan 01, 2020 1:30 PM&lt;/code&gt;.&lt;br /&gt;
+If you want it to instead be displayed in a 24h format, you can use: &lt;code&gt;MMM dd, yyyy HH:mm&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;All the valid values for formatting the dates is available in the &lt;a href=&quot;https://github.com/moment/luxon/blob/master/docs/formatting.md#table-of-tokens&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;luxon documentation&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;created-and-updated-values&quot; tabindex=&quot;-1&quot;&gt;Created and updated values&lt;/h3&gt;
+&lt;p&gt;The date values can be set in two ways. Either be set as a front-matter value in your note, with the key you specify in the settings, like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-03-09%20at%2015.09.43.png&quot; alt=&quot;CleanShot 2023-03-09 at 15.09.43.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Or, of you want to use the creation and modification date of the file itself, leave these fields blanks, like this:&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-03-09%20at%2015.09.54.png&quot; alt=&quot;CleanShot 2023-03-09 at 15.09.54.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;css-settings&quot; tabindex=&quot;-1&quot;&gt;CSS settings&lt;/h2&gt;
+&lt;p&gt;Specify which key you want to use in frontmatter to specify what &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/note-specific-settings/#body-classes&quot;&gt;body classes&lt;/a&gt; a note should have in the garden:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-04-25%20at%2018.18.10.png&quot; alt=&quot;CleanShot 2023-04-25 at 18.18.10.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;note-icon-settings&quot; tabindex=&quot;-1&quot;&gt;Note Icon Settings&lt;/h2&gt;
+&lt;p&gt;Here you can specify if you want to show note icons in the note title, in the filetree and on internal links. Each note can have its own note icon. The plugin provides 4 icons by default. More details on that is available in &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/note-specific-settings/#note-icons&quot;&gt;Note Specific Settings#Note Icons&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Remember to click the &amp;quot;Apply settings to site&amp;quot; button after changing it.&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-02-14%20at%2018.18.57@2x.png&quot; alt=&quot;CleanShot 2023-02-14 at 18.18.57@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/03-note-settings/&quot;&gt;&amp;lt; Prev&lt;/a&gt; | &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/05-other-settings/&quot;&gt;Next: Other Settings &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/getting-started/04-appearance-settings/" >
+        </entry>
+        <entry>
+            <title>
+                03 Note settings
+                
+            </title>
+            <updated>2023-10-12T15:12:56.674Z</updated>
+            <id>https://dg-docs.ole.dev/getting-started/03-note-settings/</id>
+            <content type="html">
+                &lt;p&gt;By default the website is very simple, simply showing your note content, and a navbar at the top. But the plugin also support features like backlinks, local graph and search.&lt;/p&gt;
+&lt;p&gt;All such settings are available in the &amp;quot;Note Settings&amp;quot; dialog. To edit them, got to Obsidian Settings &amp;gt; Digital Garden &amp;gt; Note Settings and click the &amp;quot;Edit&amp;quot; button as pictured below.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-09%20at%2021.27.43@2x.png&quot; alt=&quot;CleanShot 2022-11-09 at 21.27.43@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;You should then be presented with a dialog looking like this:&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-09%20at%2021.38.15@2x.png&quot; alt=&quot;CleanShot 2022-11-09 at 21.38.15@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;When these are turned on or off, the setting will instantly be published to your site. The settings set here are the global default settings used for each published note. If you want more granular control, and disable or enable some features for some particular notes, you can do this via front matter. All the settings has the frontmatter/&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/01-getting-started/#ad515c&quot;&gt;properties&lt;/a&gt; equivalence written in parentheses behind the settings.&lt;/p&gt;
+&lt;p&gt;So if you have enabled the search globally, but have one note where you want to disable this, you can do so by setting the &lt;code&gt;dg-enable-search&lt;/code&gt; to false:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dg-publish: true
+dg-enable-search: false
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or the other way around: If you have disabled the graph globally, but have a note where you want it to show, you can set the &lt;code&gt;dg-show-local-graph&lt;/code&gt; to true.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dg-publish: true
+dg-show-local-graph: true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!note] Obsidian properties&lt;br /&gt;
+After introducing &lt;a href=&quot;https://help.obsidian.md/Editing+and+formatting/Properties&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;properties&lt;/a&gt;, Obsidian doesn&#39;t explicitly put the necessary &amp;quot;false&amp;quot; value on checkbox properties when they aren&#39;t checked. For now you&#39;ll need to use properties as text types when wanting to disable settings on a specific note. For example, the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/example-pages/simple-page/&quot;&gt;Simple Page&lt;/a&gt; note&#39;s properties looks like this:&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/CleanShot%202023-09-21%20at%2010.41.39@2x.png&quot; alt=&quot;CleanShot 2023-09-21 at 10.41.39@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;available-settings&quot; tabindex=&quot;-1&quot;&gt;Available settings&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;show-home-link&quot; tabindex=&quot;-1&quot;&gt;Show home link&lt;/h3&gt;
+&lt;p&gt;On by default. If this is turned on, a navbar will show at the top of each note. The site name will be displayed as a header, and can be clicked on. Clicking on it will take the user back to the home note. By default the site name is &amp;quot;Digital Garden&amp;quot;. This can be changed via the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/04-appearance-settings/#sitename&quot;&gt;04 Appearance Settings#Sitename&lt;/a&gt; settings.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;show-local-graph-for-notes&quot; tabindex=&quot;-1&quot;&gt;Show local graph for notes&lt;/h3&gt;
+&lt;p&gt;Off by default. When turned on a local graph, like the one in Obsidian, will be shown to the right. It will show both outgoing and incoming links to the current note. It is interactive, and can be moved around. Clicking one of the nodes will take you to the corresponding note.&lt;br /&gt;
+On desktop it is shown to the right. On mobile it is shown in the bottom.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;show-a-table-of-content-for-notes&quot; tabindex=&quot;-1&quot;&gt;Show a table of content for notes&lt;/h3&gt;
+&lt;p&gt;Off by default. When turned on, a list of all headers in your note will be shown to the right. Clicking one the headers will scroll to the corresponding header in the note.&lt;br /&gt;
+On desktop it is shown to the right. On mobile it is hidden.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;show-backlinks-for-notes&quot; tabindex=&quot;-1&quot;&gt;Show backlinks for notes&lt;/h3&gt;
+&lt;p&gt;Off by default. When turned on, your published notes will display a list of notes linking back to it. It will only show notes that have been published.&lt;br /&gt;
+On desktop and bigger screens it will be placed on the right. On mobile and smaller screens it is put on the bottom of the page.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;show-inline-title&quot; tabindex=&quot;-1&quot;&gt;Show inline title&lt;/h3&gt;
+&lt;p&gt;Off by default. When turned on, the filename will be shown on the top of the page. Similar to the &amp;quot;Show inline title&amp;quot; setting introduced in Obsidian v1.0.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;show-filetree-sidebar&quot; tabindex=&quot;-1&quot;&gt;Show filetree sidebar&lt;/h3&gt;
+&lt;p&gt;Off by default. When turned on, a sidebar will be shown to the right, with all your published notes displayed in the folder hierarchy they are placed in in Obsidian. On smaller screens it will disappear, but can be viewed by clicking the &amp;quot;hamburger&amp;quot; menu in the top left corner.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;link-preview&quot; tabindex=&quot;-1&quot;&gt;Link preview&lt;/h3&gt;
+&lt;p&gt;Off by default. When turned on, all links will show a preview of the note content when you hover over them.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;enable-search&quot; tabindex=&quot;-1&quot;&gt;Enable search&lt;/h3&gt;
+&lt;p&gt;Off by default. When enabled, users have the option to easily search through all your published notes. The searchbox can be viewed by clicking the search box that appears in the upper right corner, or on the top of the filetree sidebar if this is enabled. It can also be triggerd by pressing CTRL+K on Windows/Linux or CMD+K on MacOS.&lt;br /&gt;
+A dialog will pop up. The results can be navigated by using your keyboard using the up and down arrow keys. Pressing enter will take you to the note. Pressing ESC will close the search box.&lt;/p&gt;
+&lt;p&gt;When search is enabled, you can also construct URLs that shows a search and the result. This is done by specifying a &amp;quot;q&amp;quot; query parameter in the URL.&lt;br /&gt;
+E.g. for this site: &lt;a href=&quot;https://dg-docs.ole.dev/?q=Commands&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://dg-docs.ole.dev/?q=Commands&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;show-tags&quot; tabindex=&quot;-1&quot;&gt;Show Tags&lt;/h3&gt;
+&lt;p&gt;Off by default. When turned on, any tags in your note&#39;s frontmatter will show at the top of the page, just under the note title.&lt;br /&gt;
+If search is enabled, clicking on a tag will bring up the search box and show all notes with that tag.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;let-all-frontmatter-through&quot; tabindex=&quot;-1&quot;&gt;Let all frontmatter through&lt;/h3&gt;
+&lt;p&gt;Off by default. Most users want this turned off. This is a setting mainly for advanced users, who modifies their template and wants full control over what frontmatter is passed through to the template. By default all frontmatter properties not recognized by the plugin are stripped away before publishing. This is to prevent the build in Netlify from failing if there are data in the frontmatter not recognized by the static site generator. (See &lt;a href=&quot;https://www.11ty.dev/docs/data-frontmatter/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;11ty Front Matter Data&lt;/a&gt; for details on this). If you&#39;re site suddenly stopped working, and this is enabled, it is worth trying to disable it again.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;note-specific-settings&quot; tabindex=&quot;-1&quot;&gt;Note-specific settings&lt;/h2&gt;
+&lt;p&gt;There are also some &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/note-specific-settings/&quot;&gt;Note Specific Settings&lt;/a&gt; that are not in the &amp;quot;Note Settings&amp;quot; view. These are settings that can only be set for specific notes. An overview of these are available &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/note-specific-settings/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/02-commands/&quot;&gt;&amp;lt; Prev&lt;/a&gt; | &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/04-appearance-settings/&quot;&gt;Next: Appearance Settings &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/getting-started/03-note-settings/" >
+        </entry>
+        <entry>
+            <title>
+                02 Commands
+                
+            </title>
+            <updated>2023-03-17T13:40:54.777Z</updated>
+            <id>https://dg-docs.ole.dev/getting-started/02-commands/</id>
+            <content type="html">
+                &lt;h3 id=&quot;publish-single-note&quot; tabindex=&quot;-1&quot;&gt;Publish Single Note&lt;/h3&gt;
+&lt;p&gt;Will publish the currently active note, and only this. &lt;code&gt;dg-publish: true&lt;/code&gt; must be set on the active note.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;add-publish-flag&quot; tabindex=&quot;-1&quot;&gt;Add publish flag&lt;/h3&gt;
+&lt;p&gt;This will automatically add a &lt;code&gt;dg-publish: true&lt;/code&gt; to the frontmatter in the currently active note.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;quick-publish-and-share-note&quot; tabindex=&quot;-1&quot;&gt;Quick Publish And Share Note&lt;/h3&gt;
+&lt;p&gt;Will add a publish flag to the currently active note, publish it and copy the garden URL to your clipboard.&lt;/p&gt;
+&lt;p&gt;It essentially works the same way as manually triggering the commands &lt;code&gt;Add Publish Flag --&amp;gt; Publish Single Note --&amp;gt; Copy Garden URL&lt;/code&gt; in sequnce.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;publish-multiple-notes&quot; tabindex=&quot;-1&quot;&gt;Publish Multiple Notes&lt;/h3&gt;
+&lt;p&gt;This command will publish all notes in your vault that have the dg-publish setting set to true. Depending on the number of notes, this may take a while. You can watch the progress of publication in the bottom right statusbar.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;copy-garden-url&quot; tabindex=&quot;-1&quot;&gt;Copy Garden URL&lt;/h2&gt;
+&lt;p&gt;This will copy the URL of the currently active note to your clipboard.&lt;br /&gt;
+Make sure you have the correct Base URL in your settings, so that the copied URL is correct.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;open-publication-center&quot; tabindex=&quot;-1&quot;&gt;Open Publication Center&lt;/h3&gt;
+&lt;p&gt;This will open the publication center dialog. Here you can view a list what files are published, changed, deleted and not yet published. You also have the option to mass-update your notes from here.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/01-getting-started/&quot;&gt;&amp;lt; Prev&lt;/a&gt; | &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/03-note-settings/&quot;&gt;Next: Note Settings &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/getting-started/02-commands/" >
+        </entry>
+        <entry>
+            <title>
+                01 Getting started
+                
+            </title>
+            <updated>2023-10-12T15:08:06.699Z</updated>
+            <id>https://dg-docs.ole.dev/getting-started/01-getting-started/</id>
+            <content type="html">
+                &lt;p&gt;The initial setup takes a couple of minutes, but when you&#39;re done you&#39;ll have a digital garden in which you are in control of every part of it, and can customize it as you see fit. Which is what makes digital gardens so delightful.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download and install the community plugin &lt;a href=&quot;obsidian://show-plugin?id=digitalgarden&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Digital Garden&lt;/a&gt; in Obsidian.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Next, you will need a GitHub account. If you don&#39;t have this, create one &lt;a href=&quot;https://github.com/signup&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;You&#39;ll also need a Vercel account. You can sign up using your GitHub account &lt;a href=&quot;https://vercel.com/signup&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Open &lt;a href=&quot;https://github.com/oleeskild/digitalgarden&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;this repo&lt;/a&gt;, and click the blue &amp;quot;Deploy to Vercel&amp;quot; button.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-01-22%20at%2023.38.57@2x.png&quot; alt=&quot;CleanShot 2023-01-22 at 23.38.57@2x.png&quot; /&gt;&lt;br /&gt;
+This should open Vercel and create a copy of this repository in your GitHub accont. Give it a fitting name like &#39;my-digital-garden&#39;. Follow the steps in Vercel to publish your site to the internet.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;Next you need to create an access token to your GitHub Account. This acts as a sort of password so that the plugin can add new notes to your GitHub repository on your behalf. Go to &lt;a href=&quot;https://github.com/settings/tokens/new?scopes=repo&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;this page&lt;/a&gt; while logged in to GitHub. The correct settings should already be applied. (If you don&#39;t want to generate this every few months, choose the &amp;quot;No expiration&amp;quot; option.) Click the &amp;quot;Generate token&amp;quot; button, and copy the token you are presented with on the next page.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!tip] A more secure option&lt;br /&gt;
+GitHub has recently launced a new beta feature, where you can target what repositories the token has access to. This is currently the most secure way to use the plugin. See &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/fine-grained-access-token/&quot;&gt;Fine grained access token&lt;/a&gt; for details on how to generate this.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Open Obsidian and the settings for &amp;quot;Digital Garden&amp;quot; and fill in your GitHub username, the name of the repo with your notes which you created in step 3, and lastly paste in your token.&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/CleanShot%202023-10-12%20at%2017.06.27@2x.png&quot; alt=&quot;CleanShot 2023-10-12 at 17.06.27@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now, let&#39;s publish your first note! Create a new note in Obsidian. Now add two new properties to the note.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!tip]- Help! How do I add a property to a note&lt;br /&gt;
+Properties was added in Obsidian in &lt;a href=&quot;https://obsidian.md/changelog/2023-08-31-desktop-v1.4.5/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;version 4.1&lt;/a&gt;&lt;br /&gt;
+To add a property to a note, you have several options:&lt;/p&gt;
+&lt;ul id=&quot;ad515c&quot;&gt;
+&lt;li&gt;Use the &lt;strong&gt;Add file property&lt;/strong&gt; command.&lt;/li&gt;
+&lt;li&gt;Use the &lt;strong&gt;&lt;code&gt;Cmd/Ctrl+;&lt;/code&gt;&lt;/strong&gt; hotkey.&lt;/li&gt;
+&lt;li&gt;Choose &lt;strong&gt;Add file property&lt;/strong&gt; from the &lt;strong&gt;More actions&lt;/strong&gt; menu (three dots icon) or right-clicking the tab.&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;---&lt;/code&gt; at the very beginning of a file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;A checkbox named &lt;code&gt;dg-publish&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A checkbox named &lt;code&gt;dg-home&lt;/code&gt;&lt;br /&gt;
+Toggle both checkboxes so that they are in the &lt;code&gt;checked&lt;/code&gt; state.&lt;br /&gt;
+It should look something like this:&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/CleanShot%202023-10-12%20at%2016.59.10@2x.png&quot; alt=&quot;CleanShot 2023-10-12 at 16.59.10@2x.png&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;This does two things:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The dg-home setting tells the plugin that this should be your home page or entry into your digital garden. (It only needs to be added to &lt;em&gt;one&lt;/em&gt; note, not every note you&#39;ll publish).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The dg-publish setting tells the plugin that this note should be published to your digital garden. Notes without this setting will not be published. (In other terms: Every note you publish will need this property.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;ol start=&quot;8&quot;&gt;
+&lt;li&gt;Open your command pallete by pressing CTRL+P on Windows/Linux (CMD+P on Mac) and find the &amp;quot;Digital Garden: Publish Single Note&amp;quot; command. Press enter.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;ol start=&quot;9&quot;&gt;
+&lt;li&gt;Go to your site&#39;s URL which you should find on &lt;a href=&quot;https://vercel.com/dashboard&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Vercel&lt;/a&gt;. If nothing shows up yet, wait a minute and refresh. Your note should now appear.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;p&gt;Congratulations, you now have your own personal part of the internet in the form of a digital garden, for free 🎉.&lt;/p&gt;
+&lt;p&gt;You can now start adding links as you usually would in Obisidan, with double square brackets, to the note that you just published.&lt;/p&gt;
+&lt;p&gt;Remember to also publish the notes your are linking to as this will not happen automatically. This is by design. You are always in control of what notes you actually want to publish. If you did not publish a linked note, the link will simply lead to a site telling the user that this note does not exist.&lt;/p&gt;
+&lt;p&gt;If you want to unpublish a note, without deleting the note from your vault, simply uncheck or remove the dg-publish property in the note, open the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/02-commands/#open-publication-center&quot;&gt;publication center&lt;/a&gt; and click the &amp;quot;Delete notes from garden&amp;quot; button.&lt;/p&gt;
+&lt;p&gt;Now that you are up and running, you can take a look at the available &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/02-commands/&quot;&gt;commands&lt;/a&gt; or the various available &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/03-note-settings/&quot;&gt;note settings&lt;/a&gt;. Or maybe you want to &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/04-appearance-settings/&quot;&gt;change your theme&lt;/a&gt;?&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/02-commands/&quot;&gt;Next: Commands &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/getting-started/01-getting-started/" >
+        </entry>
+        <entry>
+            <title>
+                Features
+                
+            </title>
+            <updated>2023-03-21T16:04:45.747Z</updated>
+            <id>https://dg-docs.ole.dev/features/</id>
+            <content type="html">
+                &lt;p&gt;You can enable the following features in your digital garden, in the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/03-note-settings/&quot;&gt;note settings&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Local Graph&lt;/li&gt;
+&lt;li&gt;Global Graph&lt;/li&gt;
+&lt;li&gt;Backlinks&lt;/li&gt;
+&lt;li&gt;Table Of Content&lt;/li&gt;
+&lt;li&gt;Filetree navigation&lt;/li&gt;
+&lt;li&gt;Link preview&lt;/li&gt;
+&lt;li&gt;Search&lt;/li&gt;
+&lt;li&gt;Frontmatter tags&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Additionally the garden supports a variety of formatting and content types in your notes.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;wikilinks&quot; tabindex=&quot;-1&quot;&gt;Wikilinks&lt;/h2&gt;
+&lt;p&gt;Link as you normally would in Obisidan, with the &lt;code&gt;[[Wikilink]]&lt;/code&gt; syntax&lt;/p&gt;
+&lt;h3 id=&quot;header-links&quot; tabindex=&quot;-1&quot;&gt;Header links&lt;/h3&gt;
+&lt;p&gt;Linking to a specific header works the same way as in Obsidian&lt;br /&gt;
+&lt;code&gt;[[My Note#Note header]]&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;block-links&quot; tabindex=&quot;-1&quot;&gt;Block links&lt;/h3&gt;
+&lt;p&gt;Linking to a specific block works the same way as in Obsidian&lt;br /&gt;
+&lt;code&gt;[[My Note#^123abc]]&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;custom-link-names&quot; tabindex=&quot;-1&quot;&gt;Custom link names&lt;/h3&gt;
+&lt;p&gt;Changing display text for a wikilink works the same way as in Obsidian&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-01-10%20at%2018.07.56@2x.png&quot; alt=&quot;CleanShot 2023-01-10 at 18.07.56@2x.png|250&quot; width=&quot;250px&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;code-blocks&quot; tabindex=&quot;-1&quot;&gt;Code Blocks&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2015.34.22@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 15.34.22@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let a = 5;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2015.34.59@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 15.34.59@2x.png|200&quot; width=&quot;200px&quot; /&gt;&lt;br /&gt;
+&lt;code&gt;Some inline code&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;dataview-queries&quot; tabindex=&quot;-1&quot;&gt;Dataview queries&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-(dataview)&quot;&gt;list from &amp;quot;Advanced&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/comparison-to-other-solutions/&quot;&gt;Comparison to other solutions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/adding-custom-components/&quot;&gt;Adding custom components&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/content-customization/&quot;&gt;Content Customization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/configure-build-pipeline/&quot;&gt;Configure build pipeline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/dataview-queries/&quot;&gt;Dataview queries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/css-customization/&quot;&gt;CSS Customization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/note-specific-settings/&quot;&gt;Note Specific Settings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/hosting-alternatives/&quot;&gt;Hosting alternatives&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/tips-and-tricks/&quot;&gt;Tips and Tricks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/fine-grained-access-token/&quot;&gt;Fine grained access token&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/guides-and-how-tos/adding-comments/&quot;&gt;Adding comments&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/guides-and-how-tos/adding-analytics/&quot;&gt;Adding analytics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/roadmap/&quot;&gt;Roadmap&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;{ .block-language-dataview}&lt;br /&gt;
+More details about dataview is available here: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/dataview-queries/&quot;&gt;Dataview queries&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;callouts&quot; tabindex=&quot;-1&quot;&gt;Callouts&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; [!NOTE] Note title
+&amp;gt; Information
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE] Note title&lt;br /&gt;
+Information&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; [!WARNING] A warning
+&amp;gt; This is a warning
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!WARNING] A warning&lt;br /&gt;
+This is a warning&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;folding-callouts&quot; tabindex=&quot;-1&quot;&gt;Folding Callouts&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; [!NOTE]+ Open by default
+&amp;gt; Folding/Collapsable callout
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]+ Open by default&lt;br /&gt;
+Folding/Collapsable callout&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; [!FAQ]- Closed by default
+&amp;gt; Folding/Collapsable callout
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!FAQ]- Closed by default&lt;br /&gt;
+Folding/Collapsable callout&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;nested-callouts&quot; tabindex=&quot;-1&quot;&gt;Nested callouts&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; [!TIP] Nested callouts
+&amp;gt; Text inside the tip callout
+&amp;gt; &amp;gt; [!EXAMPLE] Inner callout
+&amp;gt; &amp;gt; Multiple nesting layers
+&amp;gt; &amp;gt; &amp;gt; [!TODO] Inner inner callout
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!TIP] Nested callouts&lt;br /&gt;
+Text inside the tip callout&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!EXAMPLE] Inner callout&lt;br /&gt;
+Multiple nesting layers&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!TODO] Inner inner callout&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;math-jax-la-tex&quot; tabindex=&quot;-1&quot;&gt;MathJax / LaTex&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;MathJax Reference&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$&#92;frac{1}{0} = &#92;infty$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;mjx-container class=&quot;MathJax&quot; jax=&quot;SVG&quot; display=&quot;true&quot; style=&quot;direction: ltr; display: block; text-align: center; margin: 1em 0; position: relative;&quot;&gt;&lt;svg style=&quot;overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -1.602ex;&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;7.406ex&quot; height=&quot;4.638ex&quot; role=&quot;img&quot; focusable=&quot;false&quot; viewBox=&quot;0 -1342 3273.6 2050&quot; aria-hidden=&quot;true&quot;&gt;&lt;g stroke=&quot;currentColor&quot; fill=&quot;currentColor&quot; stroke-width=&quot;0&quot; transform=&quot;scale(1,-1)&quot;&gt;&lt;g data-mml-node=&quot;math&quot;&gt;&lt;g data-mml-node=&quot;mfrac&quot;&gt;&lt;g data-mml-node=&quot;mn&quot; transform=&quot;translate(220,676)&quot;&gt;&lt;path data-c=&quot;31&quot; d=&quot;M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mn&quot; transform=&quot;translate(220,-686)&quot;&gt;&lt;path data-c=&quot;30&quot; d=&quot;M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;rect width=&quot;700&quot; height=&quot;60&quot; x=&quot;120&quot; y=&quot;220&quot;&gt;&lt;/rect&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mo&quot; transform=&quot;translate(1217.8,0)&quot;&gt;&lt;path data-c=&quot;3D&quot; d=&quot;M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;g data-mml-node=&quot;mi&quot; transform=&quot;translate(2273.6,0)&quot;&gt;&lt;path data-c=&quot;221E&quot; d=&quot;M55 217Q55 305 111 373T254 442Q342 442 419 381Q457 350 493 303L507 284L514 294Q618 442 747 442Q833 442 888 374T944 214Q944 128 889 59T743 -11Q657 -11 580 50Q542 81 506 128L492 147L485 137Q381 -11 252 -11Q166 -11 111 57T55 217ZM907 217Q907 285 869 341T761 397Q740 397 720 392T682 378T648 359T619 335T594 310T574 285T559 263T548 246L543 238L574 198Q605 158 622 138T664 94T714 61T765 51Q827 51 867 100T907 217ZM92 214Q92 145 131 89T239 33Q357 33 456 193L425 233Q364 312 334 337Q285 380 233 380Q171 380 132 331T92 214Z&quot; style=&quot;stroke-width: 3;&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;mjx-assistive-mml unselectable=&quot;on&quot; display=&quot;block&quot; style=&quot;top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; overflow: hidden; width: 100%;&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;&gt;&lt;mfrac&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/mfrac&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;∞&lt;/mi&gt;&lt;/math&gt;&lt;/mjx-assistive-mml&gt;&lt;/mjx-container&gt;&lt;hr /&gt;
+&lt;h2 id=&quot;tags&quot; tabindex=&quot;-1&quot;&gt;Tags&lt;/h2&gt;
+&lt;p&gt;Click on the tag below to view other pages with the same tag.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#exampletag&quot;&gt;#exampletag&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;embedded-transcluded-images&quot; tabindex=&quot;-1&quot;&gt;Embedded/Transcluded Images&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2014.24.21@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 14.24.21@2x.png|250&quot; width=&quot;250px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/obsidianlogo.png&quot; alt=&quot;obsidianlogo.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;transcluded-documents&quot; tabindex=&quot;-1&quot;&gt;Transcluded documents&lt;/h2&gt;
+&lt;h3 id=&quot;whole-file&quot; tabindex=&quot;-1&quot;&gt;Whole file&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2014.24.50@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 14.24.50@2x.png|250&quot; width=&quot;250px&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;transclusion internal-embed is-loaded&quot;&gt;&lt;a class=&quot;markdown-embed-link&quot; href=&quot;https://dg-docs.ole.dev/example-pages/transcluded-document/&quot; aria-label=&quot;Open link&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; class=&quot;svg-icon lucide-link&quot;&gt;&lt;path d=&quot;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;div class=&quot;markdown-embed&quot;&gt;
+&lt;p&gt;This is a transcluded note.&lt;/p&gt;
+&lt;p&gt;This is a block in a transcluded document&lt;/p&gt;
+&lt;h3 id=&quot;this-is-a-header&quot; tabindex=&quot;-1&quot;&gt;This is a header&lt;/h3&gt;
+&lt;p&gt;Content&lt;/p&gt;
+&lt;h4 id=&quot;this-is-a-subheader&quot; tabindex=&quot;-1&quot;&gt;This is a subheader&lt;/h4&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;header-block&quot; tabindex=&quot;-1&quot;&gt;Header block&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-01-05%20at%2017.22.10.png&quot; alt=&quot;CleanShot 2023-01-05 at 17.22.10.png&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;transclusion internal-embed is-loaded&quot;&gt;&lt;a class=&quot;markdown-embed-link&quot; href=&quot;https://dg-docs.ole.dev/example-pages/transcluded-document/#this-is-a-header&quot; aria-label=&quot;Open link&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; class=&quot;svg-icon lucide-link&quot;&gt;&lt;path d=&quot;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;div class=&quot;markdown-embed&quot;&gt;
+&lt;h3 id=&quot;this-is-a-header-1&quot; tabindex=&quot;-1&quot;&gt;This is a header&lt;/h3&gt;
+&lt;p&gt;Content&lt;/p&gt;
+&lt;h4 id=&quot;this-is-a-subheader-1&quot; tabindex=&quot;-1&quot;&gt;This is a subheader&lt;/h4&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;single-block&quot; tabindex=&quot;-1&quot;&gt;Single Block&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-01-05%20at%2017.22.27.png&quot; alt=&quot;CleanShot 2023-01-05 at 17.22.27.png&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;transclusion internal-embed is-loaded&quot;&gt;&lt;a class=&quot;markdown-embed-link&quot; href=&quot;https://dg-docs.ole.dev/example-pages/transcluded-document/#02502a&quot; aria-label=&quot;Open link&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; class=&quot;svg-icon lucide-link&quot;&gt;&lt;path d=&quot;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;div class=&quot;markdown-embed&quot;&gt;
+&lt;p&gt;This is a block in a transcluded document&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;It&#39;s also worth noting that transclusions &lt;em&gt;do not need&lt;/em&gt; the dg-publish attribute. They behave the same as an image. If you transclude something into a document, and publish that document, everything that is transcluded in it will be published as if it was part of that note.&lt;/p&gt;
+&lt;p&gt;(More details on transclusion can be read here: &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/content-customization/#tranclusions&quot;&gt;Content Customization#Tranclusions&lt;/a&gt; )&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;excalidraw&quot; tabindex=&quot;-1&quot;&gt;Excalidraw&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2014.25.34@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 14.25.34@2x.png|350&quot; width=&quot;350px&quot; /&gt;&lt;/p&gt;
+&lt;style&gt; .container {font-family: sans-serif; text-align: center;} .button-wrapper button {z-index: 1;height: 40px; width: 100px; margin: 10px;padding: 5px;} .excalidraw .App-menu_top .buttonList { display: flex;} .excalidraw-wrapper { height: 800px; margin: 50px; position: relative;} :root[dir=&quot;ltr&quot;] .excalidraw .layer-ui__wrapper .zen-mode-transition.App-menu_bottom--transition-left {transform: none;} &lt;/style&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/@excalidraw/excalidraw@0/dist/excalidraw.production.min.js&quot;&gt;&lt;/script&gt;&lt;div id=&quot;circleandsquareexcalidraw.md1&quot;&gt;&lt;/div&gt;&lt;script&gt;(function(){const InitialData={&quot;type&quot;:&quot;excalidraw&quot;,&quot;version&quot;:2,&quot;source&quot;:&quot;https://excalidraw.com&quot;,&quot;elements&quot;:[{&quot;id&quot;:&quot;f8hC_7cbuAskISt7LXHyU&quot;,&quot;type&quot;:&quot;freedraw&quot;,&quot;x&quot;:-195.4453125,&quot;y&quot;:-145.6796875,&quot;width&quot;:212.66796875,&quot;height&quot;:190.98828125,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;strokeSharpness&quot;:&quot;round&quot;,&quot;seed&quot;:30617569,&quot;version&quot;:183,&quot;versionNonce&quot;:654234753,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:null,&quot;updated&quot;:1668345152727,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[0,0.15625],[0,1.23046875],[0,2.83984375],[0,4.28515625],[0,7.6953125],[0,9.6640625],[0,13.1640625],[0,17.015625],[0,22.5234375],[0,29.53515625],[0,37.2734375],[0,45.875],[0,55.23046875],[0,65.99609375],[0,78.390625],[0,101.140625],[0,109.53515625],[0,119.484375],[0.26171875,128.25],[0.7421875,133.80078125],[1.1875,137.5390625],[1.65625,141.57421875],[2.12109375,144.9609375],[2.5546875,148.0078125],[3.1328125,152.25],[3.31640625,153.8984375],[3.6484375,155.31640625],[3.82421875,156.66015625],[3.96484375,157.5859375],[4.08203125,158.16796875],[4.08203125,158.71875],[4.08203125,159.1015625],[4.11328125,159.359375],[4.2421875,159.62109375],[4.3359375,159.84375],[4.44140625,159.93359375],[4.61328125,159.93359375],[4.8828125,159.93359375],[5.4609375,159.93359375],[6.421875,159.93359375],[7.984375,159.93359375],[10.1875,159.8203125],[12.984375,159.48828125],[16.59765625,158.88671875],[22.21875,157.921875],[29.9140625,156.9140625],[38.36328125,156.171875],[47.16796875,155.75390625],[68.17578125,155.65234375],[81.4453125,155.65234375],[95.55859375,155.65234375],[110.7890625,155.9765625],[126.7265625,156.69921875],[142.23046875,157.48828125],[153.80078125,158.1875],[163.72265625,158.84765625],[175.1015625,159.22265625],[185.07421875,159.24609375],[193.45703125,159.24609375],[198.71875,159.24609375],[202.27734375,159.24609375],[205.98046875,159.24609375],[208.34375,159.24609375],[209.92578125,159.2578125],[211.07421875,159.4140625],[211.80078125,159.5546875],[212.19921875,159.5546875],[212.4375,159.5546875],[212.6640625,159.5546875],[212.66796875,159.5546875],[211.76953125,158.578125],[210.1796875,156.59375],[207.35546875,152.21875],[205.546875,149.546875],[202.64453125,144.99609375],[200.33203125,140.8984375],[198.26953125,136.55859375],[195.59375,130.42578125],[192.47265625,122.39453125],[189.80078125,114.02734375],[187.2890625,105.08984375],[184.60546875,94.85546875],[182.0390625,83.26171875],[179.8125,71.16796875],[177.67578125,59.07421875],[175.56640625,47.41796875],[174.1328125,38.36328125],[173.08203125,29.59765625],[172.06640625,19.2578125],[171.3984375,10.234375],[171.08203125,4.67578125],[170.80078125,0.07421875],[170.52734375,-5.10546875],[170.28515625,-9.5078125],[170.02734375,-18.03515625],[169.8125,-21.953125],[169.59375,-24.11328125],[169.40625,-25.7421875],[169.2421875,-27.31640625],[169.2109375,-28.46875],[169.05078125,-29.35546875],[168.88671875,-29.9375],[168.7421875,-30.359375],[168.6328125,-30.703125],[168.52734375,-30.80078125],[168.40625,-30.80078125],[168.390625,-30.8828125],[168.390625,-31.0078125],[168.28515625,-31.0546875],[168.09375,-31.0546875],[167.87109375,-31.0546875],[167.60546875,-30.98046875],[167.38671875,-30.8046875],[166.984375,-30.25],[166.359375,-29.48828125],[165.52734375,-28.68359375],[164.5078125,-27.82421875],[162.3125,-26.0546875],[160.44140625,-24.8671875],[158.2734375,-23.6875],[156.21875,-22.73046875],[153.6796875,-21.7421875],[150.5625,-20.6640625],[147.046875,-19.51953125],[143.34375,-18.28515625],[139.62109375,-16.890625],[135.90625,-15.59765625],[132.23828125,-14.44921875],[128.41015625,-13.296875],[124.33203125,-12.3203125],[120.2421875,-11.58984375],[115.99609375,-10.8671875],[107.15234375,-9.3984375],[102.68359375,-8.796875],[98.28515625,-8.1640625],[94.1484375,-7.453125],[90.08984375,-6.73046875],[85.7890625,-5.83984375],[81.57421875,-5.03125],[74.109375,-4.03515625],[70.66015625,-3.7890625],[67.15625,-3.74609375],[64.4453125,-3.74609375],[61.5,-3.74609375],[58.68359375,-3.74609375],[56.24609375,-3.74609375],[53.83203125,-3.74609375],[49.203125,-3.19140625],[47.06640625,-2.99609375],[44.90625,-2.8046875],[42.69140625,-2.62109375],[39.953125,-2.61328125],[37.28125,-2.41796875],[35.30859375,-2.21484375],[32.4453125,-1.9765625],[29.62890625,-1.75390625],[27.90625,-1.7265625],[25.74609375,-1.53125],[23.65625,-1.36328125],[21.8515625,-1.36328125],[20.2578125,-1.36328125],[18.875,-1.36328125],[17.546875,-1.36328125],[16.421875,-1.36328125],[15.5078125,-1.36328125],[14.78515625,-1.36328125],[14.1953125,-1.36328125],[13.61328125,-1.36328125],[13.08984375,-1.36328125],[12.71875,-1.36328125],[12.23828125,-1.36328125],[12.07421875,-1.36328125],[11.94921875,-1.36328125],[11.796875,-1.36328125],[11.6015625,-1.36328125],[11.3828125,-1.36328125],[10.91015625,-1.36328125],[10.7109375,-1.36328125],[10.44921875,-1.36328125],[10.2109375,-1.36328125],[10.2109375,-1.36328125]],&quot;pressures&quot;:[],&quot;simulatePressure&quot;:true,&quot;lastCommittedPoint&quot;:[10.2109375,-1.36328125]},{&quot;id&quot;:&quot;_aZMwmY7FgcONG1cvm0G2&quot;,&quot;type&quot;:&quot;freedraw&quot;,&quot;x&quot;:177.234375,&quot;y&quot;:-154.55078125,&quot;width&quot;:151.44921875,&quot;height&quot;:185.6015625,&quot;angle&quot;:0,&quot;strokeColor&quot;:&quot;#000000&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;fillStyle&quot;:&quot;hachure&quot;,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;,&quot;roughness&quot;:1,&quot;opacity&quot;:100,&quot;groupIds&quot;:[],&quot;strokeSharpness&quot;:&quot;round&quot;,&quot;seed&quot;:1818718223,&quot;version&quot;:131,&quot;versionNonce&quot;:1618845231,&quot;isDeleted&quot;:false,&quot;boundElements&quot;:null,&quot;updated&quot;:1668345154627,&quot;link&quot;:null,&quot;locked&quot;:false,&quot;points&quot;:[[0,0],[0,-0.12890625],[-0.234375,-0.2578125],[-1.08984375,-0.2578125],[-2.02734375,-0.2578125],[-3.51171875,-0.2578125],[-5.16796875,-0.171875],[-9.39453125,0.88671875],[-12.9609375,1.93359375],[-18.1015625,3.53125],[-22.85546875,5.16015625],[-35.65234375,10.47265625],[-43.328125,14.3828125],[-50.73046875,18.80859375],[-57.0859375,23.06640625],[-62.66015625,27.09375],[-75.5859375,37.765625],[-80.89453125,42.44140625],[-85.57421875,47.23046875],[-89.71484375,51.6484375],[-93.0546875,55.68359375],[-96.1796875,60.4921875],[-99.2421875,65.9765625],[-101.7109375,71.29296875],[-103.875,76.91015625],[-105.79296875,83.08203125],[-108.41015625,96.8984375],[-109.28515625,104.05859375],[-109.5625,110.98046875],[-109.5625,117.20703125],[-109.5625,122.58203125],[-109.5625,127.80078125],[-109.5625,133.08984375],[-109.5625,138.33984375],[-109.42578125,143.50390625],[-108.41796875,148.5625],[-106.20703125,153.56640625],[-103.39453125,158.6015625],[-100.07421875,163.26953125],[-96.421875,167.4453125],[-92.84765625,171.375],[-89.19140625,174.78125],[-85.21484375,177.640625],[-81.1015625,179.8984375],[-77.09375,181.68359375],[-72.9296875,183.0625],[-68.34375,183.84765625],[-63.48046875,184.359375],[-58.8359375,184.859375],[-54.2578125,185.22265625],[-49.640625,185.34375],[-45.12109375,185.34375],[-40.46875,185.34375],[-35.8984375,185.34375],[-31.52734375,185.19140625],[-27.13671875,184.63671875],[-22.90234375,183.59375],[-14.7734375,180.3984375],[-10.9296875,178.55859375],[-7.11328125,176.46875],[-3.55859375,174.53515625],[-0.09765625,172.6875],[3.33984375,170.66796875],[6.59375,168.60546875],[9.9140625,166.45703125],[13.3203125,163.83203125],[16.64453125,161.21484375],[19.96484375,158.58984375],[22.265625,156.37109375],[25.1328125,153.0390625],[27.99609375,149.6796875],[29.47265625,147.5546875],[31.875,143.9453125],[34.18359375,140.421875],[35.4375,137.65625],[36.49609375,134.83984375],[37.52734375,131.98828125],[38.4140625,128.609375],[39.29296875,124.89453125],[39.94140625,121.18359375],[40.38671875,117.59765625],[40.8515625,113.796875],[41.3359375,109.65625],[41.73046875,105.63671875],[41.88671875,101.35546875],[41.88671875,96.5390625],[41.88671875,91.87890625],[41.88671875,87.44921875],[41.88671875,79.1328125],[41.7578125,75.58203125],[41.40625,71.80078125],[41.09375,68.8359375],[40.7734375,66.1875],[40.234375,63.2578125],[39.57421875,60.3203125],[38.78515625,57.24609375],[37.83203125,54.5703125],[36.69921875,52.15625],[35.625,49.87890625],[34.66015625,47.8984375],[33.55859375,45.828125],[31.24609375,41.71875],[30.26171875,39.83984375],[29.3125,38.1015625],[28.2265625,36.41015625],[27.1328125,34.9140625],[26.02734375,33.578125],[24.89453125,32.09765625],[23.78515625,30.78125],[22.7265625,29.70703125],[21.734375,28.8671875],[20.953125,28.2421875],[20.3515625,27.6484375],[19.765625,27.0625],[19.17578125,26.4609375],[18.57421875,25.69140625],[18.08984375,24.93359375],[17.453125,24.3203125],[16.703125,23.73046875],[15.3125,22.81640625],[14.5234375,22.375],[13.75,22.1015625],[13.02734375,21.94140625],[12.48828125,21.76171875],[12.0625,21.44140625],[11.6328125,20.96484375],[11.23046875,20.30859375],[10.921875,19.5390625],[10.6171875,18.765625],[10.6171875,18.765625]],&quot;pressures&quot;:[],&quot;simulatePressure&quot;:true,&quot;lastCommittedPoint&quot;:[10.6171875,18.765625]}],&quot;appState&quot;:{&quot;theme&quot;:&quot;light&quot;,&quot;viewBackgroundColor&quot;:&quot;#ffffff&quot;,&quot;currentItemStrokeColor&quot;:&quot;#000000&quot;,&quot;currentItemBackgroundColor&quot;:&quot;transparent&quot;,&quot;currentItemFillStyle&quot;:&quot;hachure&quot;,&quot;currentItemStrokeWidth&quot;:1,&quot;currentItemStrokeStyle&quot;:&quot;solid&quot;,&quot;currentItemRoughness&quot;:1,&quot;currentItemOpacity&quot;:100,&quot;currentItemFontFamily&quot;:1,&quot;currentItemFontSize&quot;:20,&quot;currentItemTextAlign&quot;:&quot;left&quot;,&quot;currentItemStrokeSharpness&quot;:&quot;sharp&quot;,&quot;currentItemStartArrowhead&quot;:null,&quot;currentItemEndArrowhead&quot;:&quot;arrow&quot;,&quot;currentItemLinearStrokeSharpness&quot;:&quot;round&quot;,&quot;gridSize&quot;:null,&quot;colorPalette&quot;:{}},&quot;files&quot;:{}};InitialData.scrollToContent=true;App=()=&gt;{const e=React.useRef(null),t=React.useRef(null),[n,i]=React.useState({width:void 0,height:void 0});return React.useEffect(()=&gt;{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height});const e=()=&gt;{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height})};return window.addEventListener(&quot;resize&quot;,e),()=&gt;window.removeEventListener(&quot;resize&quot;,e)},[t]),React.createElement(React.Fragment,null,React.createElement(&quot;div&quot;,{className:&quot;excalidraw-wrapper&quot;,ref:t},React.createElement(ExcalidrawLib.Excalidraw,{ref:e,width:n.width,height:n.height,initialData:InitialData,viewModeEnabled:!0,zenModeEnabled:!0,gridModeEnabled:!1})))},excalidrawWrapper=document.getElementById(&quot;circleandsquareexcalidraw.md1&quot;);ReactDOM.render(React.createElement(App),excalidrawWrapper);})();&lt;/script&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!info]&lt;br /&gt;
+Obsidian specific features like linking to other notes inside the drawings are currently not supported&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;mermaid-diagrams&quot; tabindex=&quot;-1&quot;&gt;Mermaid diagrams&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2014.26.47@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 14.26.47@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;pre class=&quot;mermaid&quot;&gt;graph LR;
+		A--&gt;B&lt;/pre&gt;&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2014.27.14@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 14.27.14@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;pre class=&quot;mermaid&quot;&gt;gantt
+	    title A Gantt Diagram
+	    dateFormat  YYYY-MM-DD
+	    section Section
+	    A task           :a1, 2014-01-01, 30d
+	    Another task     :after a1  , 20d
+	    section Another
+	    Task in sec      :2014-01-12  , 12d
+	    another task     : 24d&lt;/pre&gt;&lt;hr /&gt;
+&lt;h2 id=&quot;plant-uml-diagrams&quot; tabindex=&quot;-1&quot;&gt;PlantUML diagrams&lt;/h2&gt;
+&lt;img src=&quot;https://www.plantuml.com/plantuml/svg/jLHTRzem57tthxWAhnjBCsWx52AwJdkRLAsR-a1vkCGtmIAn8zk8TjF--wuXq9HHrZqiaHBhVfvphks9ysZzggx4PB_oobS4jwRmQxIyU7IUQdWBrqPxL9gi4wAYmeCtO5Mvy22LfTmheuLmIwKRj5Z3Jm7W5YZDMkaI2gmSiGMjDUlFNEbM_I0uYzaagS1LvR_HWx-gLAbhqXvo_f1bxzfYSwUaNq0IX-WQ7xwGSrXIMo4MluHOA4d0E2qP_zXG5qU0XhgiA4rtdBQK-f_GunmTPTa6x4VCbwKrAoslJMKiz0RlBwKSiYVWRMt5vWdHnagohJMXy-H3Y6pJBQl4U1dP4uw6XJCwJRyxiYzrZ2y7oSNyDHtZOKB3ysSDNYPwH_EhfgbKZc58_vEksBA4Q3mEFEzrwdXAexCuczviFBFqNR1a4UoLG0TXnRcCYESAqS7UkzVJ0yiif3ydsR9wakDcMwq3_4XARx1vZYNkLJYH5YJOgHuuiz3GKRfBVtzwkWhyRKuipScGm_wx7VslZJiduS-MEsSORnWKzAUzYpYyR_n2vKlDnt6SpFhPQQmmWYZDWw2ZDZtZQYuIfxDUsso7yaYRhuJIGM5D3QWbtoZAa-FRAn8Jqd9p-Mt_lm40&quot; alt=&quot;uml diagram&quot; /&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;highlighted-text&quot; tabindex=&quot;-1&quot;&gt;Highlighted text&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-12-12%20at%2016.14.14@2x.png&quot; alt=&quot;CleanShot 2022-12-12 at 16.14.14@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;Here is some highlighted text&lt;/mark&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;footnotes&quot; tabindex=&quot;-1&quot;&gt;Footnotes&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;There is a footnote here [^1]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There is a footnote here &lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://dg-docs.ole.dev/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;checkboxes&quot; tabindex=&quot;-1&quot;&gt;Checkboxes&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;- [ ] Uncheckd
+- [x] Checked
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul class=&quot;task-list&quot;&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_0&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_0&quot;&gt; Uncheckd&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_1&quot; checked=&quot;true&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_1&quot;&gt; Checked&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;sitemap&quot; tabindex=&quot;-1&quot;&gt;Sitemap&lt;/h2&gt;
+&lt;p&gt;The site automatically generates a sitemap.xml file, available at &lt;code&gt;/sitemap.xml&lt;/code&gt; on your site. This helps search engines properly index your site, making it more discoverable. For the sitemap to be properly formatted with the full URL for all your pages, the plugin needs to know the base URL of your site. By adding your URL to the plugin settings, the sitemap should automatically be generated using that value.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-12-15%20at%2022.00.24@2x.png&quot; alt=&quot;CleanShot 2022-12-15 at 22.00.24@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;atom-rss-feed&quot; tabindex=&quot;-1&quot;&gt;Atom/RSS feed&lt;/h2&gt;
+&lt;p&gt;The site automatically generates an Atom/RSS feed available at &lt;code&gt;/feed.xml&lt;/code&gt; on your site. In order for this to be generated you need to add your Base URL in the settings, like in the image above.&lt;br /&gt;
+For the dates to work properly, you need to enable the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/04-appearance-settings/#timestamps-settings&quot;&gt;Show updated timestamp&lt;/a&gt; setting under the plugin&#39;s Appearance settings. If this is not enabled, the feed will use the last date the site was built, which in practice means the last date you last published anything to the site.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;footnote-source&quot; tabindex=&quot;-1&quot;&gt;Footnote source&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;[^1]: Here are some extra information in a footnote
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr class=&quot;footnotes-sep&quot; /&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Here are some extra information in a footnote &lt;a href=&quot;https://dg-docs.ole.dev/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/features/" >
+        </entry>
+        <entry>
+            <title>
+                Transcluded document
+                
+            </title>
+            <updated>2023-01-06T09:37:29.126Z</updated>
+            <id>https://dg-docs.ole.dev/example-pages/transcluded-document/</id>
+            <content type="html">
+                &lt;p&gt;This is a transcluded note.&lt;/p&gt;
+&lt;p id=&quot;02502a&quot;&gt;This is a block in a transcluded document&lt;/p&gt;
+&lt;h3 id=&quot;this-is-a-header&quot; tabindex=&quot;-1&quot;&gt;This is a header&lt;/h3&gt;
+&lt;p&gt;Content&lt;/p&gt;
+&lt;h4 id=&quot;this-is-a-subheader&quot; tabindex=&quot;-1&quot;&gt;This is a subheader&lt;/h4&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/example-pages/transcluded-document/" >
+        </entry>
+        <entry>
+            <title>
+                Simple Page
+                
+            </title>
+            <updated>2023-09-21T08:44:54.094Z</updated>
+            <id>https://dg-docs.ole.dev/example-pages/simple-page/</id>
+            <content type="html">
+                &lt;p&gt;A page where local graph, search, backlinks, file tree, home link and table of content is disabled.&lt;/p&gt;
+&lt;p&gt;Ideal to use if you want an easy note sharing solution without all the extra bells and whistles.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/features/&quot;&gt;All features&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!note] Obsidian properties&lt;br /&gt;
+After introducing &lt;a href=&quot;https://help.obsidian.md/Editing+and+formatting/Properties&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;properties&lt;/a&gt;, Obsidian doesn&#39;t explicitly put the necessary &amp;quot;false&amp;quot; value on checkbox properties when they aren&#39;t checked. For now you&#39;ll need to use properties as text types when wanting to disable settings on a specific note. This note&#39;s properties looks like this:&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/CleanShot%202023-09-21%20at%2010.41.39@2x.png&quot; alt=&quot;CleanShot 2023-09-21 at 10.41.39@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/example-pages/simple-page/" >
+        </entry>
+        <entry>
+            <title>
+                Inline tag example
+                
+            </title>
+            <updated>2023-01-09T18:19:09.541Z</updated>
+            <id>https://dg-docs.ole.dev/example-pages/inline-tag-example/</id>
+            <content type="html">
+                &lt;p&gt;This note has an inline tag, and no tags in frontmatter.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#exampletag&quot;&gt;#exampletag&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/example-pages/inline-tag-example/" >
+        </entry>
+        <entry>
+            <title>
+                Frontmatter tag example
+                
+            </title>
+            <updated>2023-01-09T18:26:14.699Z</updated>
+            <id>https://dg-docs.ole.dev/example-pages/frontmatter-tag-example/</id>
+            <content type="html">
+                &lt;p&gt;This note has tags in the frontmatter, but no inline tags. For frontmatter tags to show up, you need to enable &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/03-note-settings/#show-tags&quot;&gt;show tags in the note settings&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The frontmatter for this note looks like this:&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-01-09%20at%2019.17.47.png&quot; alt=&quot;CleanShot 2023-01-09 at 19.17.47.png&quot; /&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/example-pages/frontmatter-tag-example/" >
+        </entry>
+        <entry>
+            <title>
+                Digital Garden - Publish Obsidian Notes For Free
+                
+            </title>
+            <updated>2025-02-04T14:45:16.401Z</updated>
+            <id>https://dg-docs.ole.dev/</id>
+            <content type="html">
+                &lt;h1 style=&quot;font-size: 128px&quot;&gt;🏡&lt;/h1&gt;
+&lt;h1 id=&quot;obsidian-digital-garden&quot; tabindex=&quot;-1&quot;&gt;Obsidian Digital Garden&lt;/h1&gt;
+&lt;p&gt;The  &lt;a href=&quot;https://github.com/oleeskild/obsidian-digital-garden&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian Digital Garden Plugin&lt;/a&gt; is a free and open source publishing tool for &lt;a href=&quot;https://obsidian.md/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Publish your notes directly from &lt;a href=&quot;https://obsidian.md/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian&lt;/a&gt; to the internet. While &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/features/&quot;&gt;feature packed&lt;/a&gt;, it is &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/03-note-settings/&quot;&gt;highly configurable&lt;/a&gt; and &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/adding-custom-components/&quot;&gt;hackable&lt;/a&gt;. Enable and disable features on a per-note basis. Use it as a full fledged digital garden or as a  &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/example-pages/simple-page/&quot;&gt;simple note sharing solution&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;👉 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/01-getting-started/&quot;&gt;Getting Started&lt;/a&gt;&lt;br /&gt;
+👉 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/features/&quot;&gt;Features&lt;/a&gt;&lt;br /&gt;
+👉 &lt;a href=&quot;https://discord.gg/Z46n2RNX8e&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Join the Discord Server&lt;/a&gt;&lt;/p&gt;
+&lt;div style=&quot;display:none; justify-content: center; cursor: pointer;&quot;&gt;
+	&lt;a href=&quot;https://dg-docs.ole.dev/getting-started/01-getting-started/&quot;&gt;
+		&lt;button style=&quot; font-size: 32px; padding: 10px 20px; height: fit-content; margin-top: 20px; margin-bottom: 40px; background: var(--text-accent); font-weight: 600; color: var(--text-on-accent); cursor: pointer;&quot;&gt;
+			GETTING STARTED
+		&lt;/button&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;sites-other-people-have-created&quot; tabindex=&quot;-1&quot;&gt;Sites other people have created&lt;/h2&gt;
+&lt;p&gt;This site is itself powered by the Digital Garden plugin.&lt;br /&gt;
+Have a look at &lt;a href=&quot;https://obsidian-gallery.craftengineer.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian Gallery&lt;/a&gt; maintained by GitHub user &lt;a href=&quot;https://github.com/jsifalda&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Jiri Sifalda&#39;s&lt;/a&gt; for an updated list of Digital Gardens created by the community.&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; cursor: pointer;&quot;&gt;
+	&lt;a href=&quot;https://obsidian-gallery.craftengineer.com/&quot; target=&quot;_blank&quot;&gt;
+		&lt;button style=&quot; font-size: 24px; padding: 10px; height: fit-content; margin-top: 50px; background: var(--text-accent); font-weight: 600; color: var(--text-on-accent); cursor: pointer; &quot;&gt;
+			Submit your digital garden 
+		&lt;/button&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+&lt;h4 id=&quot;featured-sites&quot; tabindex=&quot;-1&quot;&gt;Featured sites&lt;/h4&gt;
+&lt;div style=&quot;display: flex; flex-wrap: wrap; align-items: center; justify-content: center;&quot;&gt;
+	&lt;div style=&quot;display: flex; flex-direction: column; justify-content: center;align-items:center;&quot;&gt;
+			&lt;img style=&quot;padding: 10px&quot; src=&quot;https://res.cloudinary.com/dix4ngy25/image/upload/c_scale,r_8,w_200/v1688631583/CleanShot_2023-07-06_at_10.13.42_2x_uygc7w.png&quot; /&gt;
+			&lt;a href=&quot;https://edav-garden.netlify.app/&quot; target=&quot;_blank&quot;&gt;Edav Garden&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div style=&quot;display: flex; flex-direction: column; justify-content: center;align-items:center;&quot;&gt;
+		&lt;img style=&quot;padding: 10px&quot; src=&quot;https://res.cloudinary.com/dix4ngy25/image/upload/c_scale,r_8,w_200/v1668500110/dgdocs/CleanShot_2022-11-15_at_09.14.26_2x.png&quot; /&gt;
+		&lt;a href=&quot;https://ajy.co/&quot; target=&quot;_blank&quot;&gt;ajy.co&lt;/a&gt;
+	&lt;/div&gt;
+&lt;div style=&quot;display: flex; flex-direction: column; justify-content: center;align-items:center;&quot;&gt;
+		&lt;img style=&quot;padding: 10px&quot; src=&quot;https://res.cloudinary.com/dix4ngy25/image/upload/c_scale,r_8,w_200/v1698937521/CleanShot_2023-11-02_at_16.04.42_2x_ldmmgq.png&quot; /&gt;
+		&lt;a href=&quot;https://teresawatts.com/&quot; target=&quot;_blank&quot;&gt;Teresa Watts&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div style=&quot;display: flex; flex-direction: column; justify-content: center;align-items:center;&quot;&gt;
+		&lt;img style=&quot;padding: 10px&quot; src=&quot;https://res.cloudinary.com/dix4ngy25/image/upload/c_scale,r_8,w_200/v1668068263/dgdocs/CleanShot_2022-11-10_at_09.17.28_2x.png&quot; /&gt;
+		&lt;a href=&quot;https://notes.thatother.dev/&quot; target=&quot;_blank&quot;&gt;That Other Dev&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div style=&quot;display: flex; flex-direction: column; justify-content: center;align-items:center;&quot;&gt;
+		&lt;img style=&quot;padding: 10px&quot; src=&quot;https://res.cloudinary.com/dix4ngy25/image/upload/c_scale,r_8,w_200/v1672992556/dgdocs/CleanShot_2023-02-05_at_20.18.45_2x&quot; /&gt;
+		&lt;a href=&quot;https://hermitage.utsob.me/&quot; target=&quot;_blank&quot;&gt;Hermitage&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div style=&quot;display: flex; flex-direction: column; justify-content: center;align-items: center&quot;&gt;
+		&lt;img style=&quot;padding: 10px&quot; src=&quot;https://res.cloudinary.com/dix4ngy25/image/upload/c_scale,r_8,w_200/v1668068103/dgdocs/CleanShot_2023-02-05_at_20.17.02_2x&quot; /&gt;
+		&lt;a href=&quot;https://icewind.quest/&quot; target=&quot;_blank&quot;&gt;IceWind.Quest&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div style=&quot;display: flex; flex-direction: column; justify-content: center;align-items:center;&quot;&gt;
+		&lt;img style=&quot;padding: 10px&quot; src=&quot;https://res.cloudinary.com/dix4ngy25/image/upload/c_scale,r_8,w_200/v1688631571/dgdocs/ton0zxq8eoiuyf6dqyhp&quot; /&gt;
+		&lt;a href=&quot;https://www.craftengineer.com/&quot; target=&quot;_blank&quot;&gt;Craft Engineer&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div style=&quot;display: flex; flex-direction: column; justify-content: center;align-items:center;&quot;&gt;
+		&lt;img style=&quot;padding: 10px&quot; src=&quot;https://res.cloudinary.com/dix4ngy25/image/upload/c_scale,r_8,w_200/v1688631575/CleanShot_2023-07-06_at_10.17.30_2x_ip7rjv.png&quot; /&gt;
+		&lt;a href=&quot;https://digital-garden-myqntm.vercel.app/&quot; target=&quot;_blank&quot;&gt;DigiGarden&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div style=&quot;display: flex; flex-direction: column; justify-content: center;align-items:center;&quot;&gt;
+		&lt;img style=&quot;padding: 10px&quot; src=&quot;https://res.cloudinary.com/dix4ngy25/image/upload/c_scale,r_8,w_200/v1671387169/dgdocs/CleanShot_2022-12-18_at_19.12.28_2x.png&quot; /&gt;
+		&lt;a href=&quot;https://notes.ole.dev/&quot; target=&quot;_blank&quot;&gt;notes.ole.dev&lt;/a&gt;
+	&lt;/div&gt;	
+&lt;/div&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/" >
+        </entry>
+        <entry>
+            <title>
+                Tips and Tricks
+                
+            </title>
+            <updated>2025-02-10T15:31:09.197Z</updated>
+            <id>https://dg-docs.ole.dev/advanced/tips-and-tricks/</id>
+            <content type="html">
+                &lt;p&gt;Here are a collection and tips and tricks that can be of use when publishing your notes.&lt;/p&gt;
+&lt;h2 id=&quot;publish-excalidrawing&quot; tabindex=&quot;-1&quot;&gt;Publish excalidrawing&lt;/h2&gt;
+&lt;p&gt;If you want to publish a excalidrawing, without having to transclude it into another note, you can simply add the dg-publish: true flag to the frontmatter of the excalidraw file. It will then be published as a standalone note, with only the excalidrawing showing.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;mark-multiple-notes-with-dg-publish&quot; tabindex=&quot;-1&quot;&gt;Mark multiple notes with dg-publish&lt;/h2&gt;
+&lt;p&gt;The plugin itself doesn&#39;t provide any easy way to mark multiple notes at once with the dg-publish attribute. However you can make use of a plugin like &lt;a href=&quot;https://github.com/chhoumann/MetaEdit&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;MetaEdit&lt;/a&gt; which has many features designed for exactly this.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;automatically-add-publish-flag-to-note-when-adding-note-to-folder&quot; tabindex=&quot;-1&quot;&gt;Automatically add publish flag to note when adding note to folder&lt;/h2&gt;
+&lt;p&gt;Some people have requested functionality for publishing all notes in a given folder. To do this, you can combine this plugin with the &lt;a href=&quot;https://github.com/SilentVoid13/Templater&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Templater plugin&lt;/a&gt; to create folders which will automatically use a template having the dg-publish attribute set. Thanks to &lt;a href=&quot;https://github.com/vanadium23&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;vanadium23&lt;/a&gt; for &lt;a href=&quot;https://github.com/oleeskild/obsidian-digital-garden/issues/26#issuecomment-1114321275&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;sharing this tip.&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;render-html&quot; tabindex=&quot;-1&quot;&gt;Render HTML&lt;/h2&gt;
+&lt;p&gt;If you write any HTML in your notes, they will be rendered in the garden. This means you can create custom &amp;quot;website-like&amp;quot; component on your site. As an example, the grid rendered  in &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/#sites-people-have-created&quot;&gt;Digital Garden - Publish Obsidian Notes For Free#Sites people have created&lt;/a&gt; was created using divs and image tags with some custom inline styling.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;div style=&amp;quot;display: flex; flex-wrap: wrap; align-items: center; justify-content: center;&amp;quot;&amp;gt;
+	&amp;lt;div style=&amp;quot;display: flex; flex-direction: column; justify-content: center;align-items:center;&amp;quot;&amp;gt;
+		&amp;lt;img style=&amp;quot;padding: 10px&amp;quot; src=&amp;quot;https://res.cloudinary.com/dix4ngy25/image/upload/c_scale,r_8,w_300/v1668068263/dgdocs/CleanShot_2022-11-10_at_09.17.28_2x.png&amp;quot;/&amp;gt;
+		&amp;lt;a href=&amp;quot;https://notes.thatother.dev/&amp;quot;&amp;gt;That Other Dev&amp;lt;/a&amp;gt;
+	&amp;lt;/div&amp;gt;
+	&amp;lt;div style=&amp;quot;display: flex; flex-direction: column; justify-content: center;align-items: center&amp;quot;&amp;gt;
+		&amp;lt;img style=&amp;quot;padding: 10px&amp;quot; src=&amp;quot;https://res.cloudinary.com/dix4ngy25/image/upload/c_scale,r_8,w_300/v1668068103/dgdocs/CleanShot_2022-11-10_at_09.14.47_2x.png&amp;quot;/&amp;gt;
+		&amp;lt;a href=&amp;quot;https://syleria.netlify.app/&amp;quot;&amp;gt;Syleria&amp;lt;/a&amp;gt;
+	&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Note that the HTML cannot have any empty newlines between the opening tag and closing tag. This will cause some of the HTML to be printed instead of rendered&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;buttons&quot; tabindex=&quot;-1&quot;&gt;Buttons&lt;/h3&gt;
+&lt;p&gt;If you want to render buttons on your site, you can either do it the markdown way, with an SVG, or just create a html button.&lt;/p&gt;
+&lt;h4 id=&quot;svg-button&quot; tabindex=&quot;-1&quot;&gt;SVG Button&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;[&amp;lt;img style=&amp;quot;float:left&amp;quot; src=&amp;quot;https://user-images.githubusercontent.com/14358394/115450238-f39e8100-a21b-11eb-89d0-fa4b82cdbce8.png&amp;quot; width=&amp;quot;200&amp;quot;&amp;gt;](https://ko-fi.com/oleeskild)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;will result in&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ko-fi.com/oleeskild&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;img style=&quot;float:left&quot; src=&quot;https://user-images.githubusercontent.com/14358394/115450238-f39e8100-a21b-11eb-89d0-fa4b82cdbce8.png&quot; width=&quot;200&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;html-button&quot; tabindex=&quot;-1&quot;&gt;HTML Button&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;div style=&amp;quot;display: flex; justify-content: center; cursor:pointer;&amp;quot;&amp;gt;
+	&amp;lt;a href=&amp;quot;https://github.com/oleeskild/obsidian-digital-garden/issues/55&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;
+		&amp;lt;button&amp;gt;Submit your site&amp;lt;/button&amp;gt;
+	&amp;lt;/a&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;will result in&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; cursor: pointer;&quot;&gt;
+	&lt;a href=&quot;https://github.com/oleeskild/obsidian-digital-garden/issues/55&quot; target=&quot;_blank&quot;&gt;
+		&lt;button&gt;Submit your site&lt;/button&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+&lt;h3 id=&quot;styled-html-button&quot; tabindex=&quot;-1&quot;&gt;Styled HTML button&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;div style=&amp;quot;display: flex; justify-content: center; cursor: pointer;&amp;quot;&amp;gt;
+	&amp;lt;a href=&amp;quot;https://github.com/oleeskild/obsidian-digital-garden/issues/55&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;
+		&amp;lt;button style=&amp;quot; font-size: 28px; padding: 10px; height: fit-content; margin-top: 50px; background: var(--text-accent); font-weight: 600; color: var(--text-on-accent); &amp;quot;&amp;gt;
+			Submit your digital garden site
+		&amp;lt;/button&amp;gt;
+	&amp;lt;/a&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;will result in&lt;/p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; cursor: pointer;&quot;&gt;
+	&lt;a href=&quot;https://github.com/oleeskild/obsidian-digital-garden/issues/55&quot; target=&quot;_blank&quot;&gt;
+		&lt;button style=&quot; font-size: 28px; padding: 10px; height: fit-content; margin-top: 50px; background: var(--text-accent); font-weight: 600; color: var(--text-on-accent); cursor: pointer;&quot;&gt;
+			Submit your digital garden site
+		&lt;/button&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;image-heavy-sites&quot; tabindex=&quot;-1&quot;&gt;Image heavy sites&lt;/h3&gt;
+&lt;p&gt;The plugin in it&#39;s current form is not optimized for image-heavy sites. A couple of images in your notes should be just fine, but if you embed 10s or 100s of large image files in one note, you will run into some performance issues.&lt;br /&gt;
+The note will load slowly, and you can get an error from GitHub when trying to publish, due to the size of the note.&lt;/p&gt;
+&lt;p&gt;There is a workaround. If your notes has a lot of images, upload them to a  cloud storage and embed them with the &lt;code&gt;![image text](https://image.url)&lt;/code&gt; syntax in your notes. You should then see a significant speed boost.&lt;/p&gt;
+&lt;p&gt;This can even be automated by using a plugin like the &lt;a href=&quot;https://github.com/gavvvr/obsidian-imgur-plugin&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian Imgur Plugin&lt;/a&gt;, which will automatically upload pasted images to imgur and embed them in your note.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;adding-analytics-to-vercel&quot; tabindex=&quot;-1&quot;&gt;Adding analytics to Vercel&lt;/h3&gt;
+&lt;p&gt;If you are using Vercel to host your site, you can add basic analytics to your site by following the instructions described &lt;a href=&quot;https://github.com/oleeskild/obsidian-digital-garden/discussions/195&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;disable-auto-detection-of-ur-ls&quot; tabindex=&quot;-1&quot;&gt;Disable  auto detection of URLs&lt;/h3&gt;
+&lt;p&gt;The garden will automatically find text that looks like URLs and make them clickable automatically. If, for some reason, you do not want that you can follow the instructions given in &lt;a href=&quot;https://github.com/oleeskild/obsidian-digital-garden/issues/317#issuecomment-2647525906&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;this comment&lt;/a&gt; to turn it off.&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/advanced/tips-and-tricks/" >
+        </entry>
+        <entry>
+            <title>
+                Roadmap
+                
+            </title>
+            <updated>2022-12-15T19:48:03.648Z</updated>
+            <id>https://dg-docs.ole.dev/advanced/roadmap/</id>
+            <content type="html">
+                &lt;p&gt;This plugin is under active development. Upcoming features are tracked in the following Kanban board on GitHub:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/users/oleeskild/projects/1&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/users/oleeskild/projects/1&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/advanced/roadmap/" >
+        </entry>
+        <entry>
+            <title>
+                Note Specific Settings
+                
+            </title>
+            <updated>2023-09-25T20:49:09.512Z</updated>
+            <id>https://dg-docs.ole.dev/advanced/note-specific-settings/</id>
+            <content type="html">
+                &lt;h2 id=&quot;title&quot; tabindex=&quot;-1&quot;&gt;Title&lt;/h2&gt;
+&lt;p&gt;If you want to use a custom page title instead of the name of your note, you can use the &amp;quot;title&amp;quot; attribute in frontmatter. This allows you to use characters that are not allowed to use in filenames. (Ex: &amp;quot;:&amp;quot;, &amp;quot;/&amp;quot;, &amp;quot;|&amp;quot;)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+dg-publish: true
+title: &amp;quot;My Custom Title&amp;quot;
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;custom-links&quot; tabindex=&quot;-1&quot;&gt;Custom Links&lt;/h2&gt;
+&lt;p&gt;This plugin supports setting custom links to a note, if you prefer something else than the default behaviour. This is done by adding a dg-permalink attribute to the frontmatter of your file. As an example, the top of your file could look like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+dg-publish: true
+dg-permalink: &amp;quot;mynote&amp;quot;
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will make the URL to you note be &amp;quot;{Your-Garden-Name}.netlify.app/mynote/&amp;quot;. You can still use normal obsidian links as before to link to it. These will be automatically corrected once you publish a note with the permalink attribute. Same goes for deleting the attribute. Doing so will result in the note using the default URL. All links in other notes should automatically be corrected and still work.&lt;/p&gt;
+&lt;p&gt;The permalinks can be an arbitrary level of folders deep, such as:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+dg-permalink: &amp;quot;category/2022/mynote/&amp;quot;
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;file-path&quot; tabindex=&quot;-1&quot;&gt;File path&lt;/h3&gt;
+&lt;p&gt;If you want your note to appear in a different file structure than what you have in your vault, you can use the dg-path attribute, like so:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+dg-path: &amp;quot;Advanced/Features.md&amp;quot;
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;More details about this is available in &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/05-other-settings/#rewrite-path-for-single-note&quot;&gt;05 Other Settings#Rewrite path for single note.&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;pinning-notes-to-filetree&quot; tabindex=&quot;-1&quot;&gt;Pinning notes to filetree&lt;/h2&gt;
+&lt;p&gt;If you want certain notes to be at the top of the folder its in, you can use the dg-pinned attribute. Setting this to true will make the note be on top of the folder it is currently in&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+dg-pinned: true
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;hide-file-from-file-tree&quot; tabindex=&quot;-1&quot;&gt;Hide file from file tree&lt;/h2&gt;
+&lt;p&gt;If you want to hide a note from the filetree, you can do so by setting dg-hide to true.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+dg-hide: true
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;hide-note-from-graph&quot; tabindex=&quot;-1&quot;&gt;Hide note from graph&lt;/h2&gt;
+&lt;p&gt;If you want to hide a note from the graph view, you can do so by setting dg-hide to true.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+dg-hide-in-graph: true
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;metatags&quot; tabindex=&quot;-1&quot;&gt;Metatags&lt;/h2&gt;
+&lt;p&gt;Setting metatags for a note can be done by adding a dg-metatags attribute like so:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dg-metatags:
+ description: &amp;quot;some description&amp;quot;
+ &amp;quot;og:image&amp;quot;: &amp;quot;https://example.com/someimage.png&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that there is a single space before the &amp;quot;description&amp;quot; field, &lt;strong&gt;not&lt;/strong&gt; a tab.&lt;/p&gt;
+&lt;p&gt;This feature can be used if you want custom titles and images when sharing links in social media. Using the example below will add a title and an image that will be used when sharing the link in social media.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dg-metatags:
+ &amp;quot;og:title&amp;quot;: &amp;quot;Title Appearing on Social Media Site&amp;quot;
+ &amp;quot;og:image&amp;quot;: &amp;quot;https://example.com/someimage.png&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Read more about the &lt;a href=&quot;https://ogp.me/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Open Graph Protocol&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;body-classes&quot; tabindex=&quot;-1&quot;&gt;Body classes&lt;/h2&gt;
+&lt;p&gt;You can set custom classes to the body tag for your published notes, by using the &#39;dg-content-classes&#39; attribute.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dg-content-classes: cards
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will add a &amp;quot;cards&amp;quot; class to your note, allowing you to customize each note with specific classes.&lt;/p&gt;
+&lt;p&gt;You can also change the frontmatter key used to specify this in &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/04-appearance-settings/#css-settings&quot;&gt;the appearance settings&lt;/a&gt;. So, for example, if you are using &lt;a href=&quot;https://github.com/kepano/obsidian-minimal#css-helper-classes&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Minimal Theme&#39;s cssClasses&lt;/a&gt; you can change the key to &#39;cssClasses&#39;, meaning you don&#39;t have to specify the classes twice.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;note-icons&quot; tabindex=&quot;-1&quot;&gt;Note Icons&lt;/h2&gt;
+&lt;p&gt;Each note can have an assosiated note icon. By default this is set by the&lt;br /&gt;
+&lt;code&gt;dg-note-icon&lt;/code&gt; property, but this can be changed in the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/04-appearance-settings/#note-icon-settings&quot;&gt;note icon settings&lt;/a&gt;.&lt;br /&gt;
+By default the plugin provides 4 options: &lt;code&gt;default&lt;/code&gt;, &lt;code&gt;1&lt;/code&gt;, &lt;code&gt;2&lt;/code&gt;, and &lt;code&gt;3&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The provided icons looks like this:&lt;/p&gt;
+&lt;h3 id=&quot;default&quot; tabindex=&quot;-1&quot;&gt;Default&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/oleeskild/digitalgarden/3d0155d9923c36f3637f87bf45b7142c6162e608/src/site/img/default-note-icon.svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1&quot; tabindex=&quot;-1&quot;&gt;1&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/oleeskild/digitalgarden/3d0155d9923c36f3637f87bf45b7142c6162e608/src/site/img/tree-1.svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2&quot; tabindex=&quot;-1&quot;&gt;2&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/oleeskild/digitalgarden/3d0155d9923c36f3637f87bf45b7142c6162e608/src/site/img/tree-2.svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;3&quot; tabindex=&quot;-1&quot;&gt;3&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/oleeskild/digitalgarden/3d0155d9923c36f3637f87bf45b7142c6162e608/src/site/img/tree-3.svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;changing-and-adding-icons&quot; tabindex=&quot;-1&quot;&gt;Changing and adding icons&lt;/h3&gt;
+&lt;p&gt;You can change and add your own icons the following way:&lt;/p&gt;
+&lt;p&gt;The ideal way to change the default icons is by adding the svgs in the img folder and setting the appropriate css vars in body in a &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/adding-custom-components/#dynamic-css-scss&quot;&gt;custom css file&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;body {
+  --note-icon-1: url(/img/your-custom.svg);
+  --note-icon-2: url(/img/tree-2.svg);
+  --note-icon-3: url(/img/tree-3.svg);
+  --note-icon-fallback: url(/img/default-note-icon.svg);}
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To add new icons, let&#39;s say, for &#39;stone&#39;, add a snippet like this (and add the relevant svg) in a &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/adding-custom-components/#dynamic-css-scss&quot;&gt;custom css file&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;body.title-note-icon .cm-s-obsidian &amp;gt; header &amp;gt; h1[data-note-icon=&amp;quot;stone&amp;quot;]::before,
+body.filetree-note-icon .filename[data-note-icon=&amp;quot;stone&amp;quot;]::before,
+body.links-note-icon .internal-link[data-note-icon=&amp;quot;stone&amp;quot;]::before,
+body.backlinks-note-icon .backlink[data-note-icon=&amp;quot;stone&amp;quot;]::before {
+  background-image: url(/img/stone.svg);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/advanced/note-specific-settings/" >
+        </entry>
+        <entry>
+            <title>
+                Hosting alternatives
+                
+            </title>
+            <updated>2023-06-19T11:01:24.117Z</updated>
+            <id>https://dg-docs.ole.dev/advanced/hosting-alternatives/</id>
+            <content type="html">
+                &lt;p&gt;While the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/01-getting-started/&quot;&gt;01 Getting started&lt;/a&gt; uses Vercel as the hosting platform, the site can be run on any other hosting platform. Some alternatives are listed below.&lt;/p&gt;
+&lt;h2 id=&quot;self-hosting&quot; tabindex=&quot;-1&quot;&gt;Self hosting&lt;/h2&gt;
+&lt;p&gt;If you want to host this on your own server, you can use the approach explained in the &lt;a href=&quot;https://github.com/oleeskild/obsidian-digital-garden/discussions/160&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;following GitHub discussion&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;vercel&quot; tabindex=&quot;-1&quot;&gt;Vercel&lt;/h2&gt;
+&lt;h3 id=&quot;blank-garden&quot; tabindex=&quot;-1&quot;&gt;Blank garden&lt;/h3&gt;
+&lt;p&gt;To deploy your site to Vercel instead of Netlify, follow the steps in &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/01-getting-started/&quot;&gt;01 Getting started&lt;/a&gt;, but instead of using the &amp;quot;Deploy to Netlify&amp;quot; button in step 3, click the button below.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://vercel.com/new/clone?repository-url=https://github.com/oleeskild/digitalgarden&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;img src=&quot;https://vercel.com/button&quot; alt=&quot;Deploy with Vercel&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;importing-existing-garden&quot; tabindex=&quot;-1&quot;&gt;Importing existing garden&lt;/h3&gt;
+&lt;p&gt;Check if your garden has the &amp;quot;vercel.json&amp;quot; file in the root folder.&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-01-06%20at%2015.11.11@2x.png&quot; alt=&quot;CleanShot 2023-01-06 at 15.11.11@2x.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;If not, add it, and copy the content from &lt;a href=&quot;https://github.com/oleeskild/digitalgarden/blob/main/vercel.json&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;here&lt;/a&gt;&lt;br /&gt;
+Then go to &lt;a href=&quot;https://vercel.com/new&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://vercel.com/new&lt;/a&gt; and choose your digital garden repository from GitHub.&lt;/p&gt;
+&lt;p&gt;Verify that the following settings are set for &amp;quot;Build and Output&amp;quot; :&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-01-05%20at%2017.19.16.png&quot; alt=&quot;CleanShot 2023-01-05 at 17.19.16.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Click &amp;quot;Deploy&amp;quot;, and your site should be live.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;netlify&quot; tabindex=&quot;-1&quot;&gt;Netlify&lt;/h2&gt;
+&lt;h3 id=&quot;blank-garden-1&quot; tabindex=&quot;-1&quot;&gt;Blank garden&lt;/h3&gt;
+&lt;p&gt;To deploy your site to Netlify instead of Vercel, follow the steps in &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/01-getting-started/&quot;&gt;01 Getting started&lt;/a&gt;, but instead of using the &amp;quot;Deploy to Vercel&amp;quot; button in step 3, click the button below.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://app.netlify.com/start/deploy?repository=https://github.com/oleeskild/digitalgarden&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;img src=&quot;https://www.netlify.com/img/deploy/button.svg&quot; alt=&quot;Deploy to Netlify&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;others&quot; tabindex=&quot;-1&quot;&gt;Others&lt;/h2&gt;
+&lt;p&gt;The garden should work just fine with all static site hosting providers such as CloudFlare, Deno, Github Pages etc. Start by going to the &lt;a href=&quot;https://github.com/oleeskild/digitalgarden&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;digitalgarden repo&lt;/a&gt; and clicking the Use This Template &amp;gt; Create a new repository. &lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-05-23%20at%2022.43.25@2x.png&quot; alt=&quot;CleanShot 2023-05-23 at 22.43.25@2x.png&quot; /&gt;&lt;br /&gt;
+You should then be able to create an account with your hosting provider of choice and connect it to your newly created repository. If the setups asks for an install command, output directory or build command, use those that are visible in the picture from Vercel above.&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/advanced/hosting-alternatives/" >
+        </entry>
+        <entry>
+            <title>
+                Adding comments
+                
+            </title>
+            <updated>2023-07-11T14:02:34.887Z</updated>
+            <id>https://dg-docs.ole.dev/advanced/guides-and-how-tos/adding-comments/</id>
+            <content type="html">
+                &lt;p&gt;Using &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/adding-custom-components/#how-does-it-work&quot;&gt;custom components&lt;/a&gt; you can add a comment system.&lt;/p&gt;
+&lt;p&gt;Here are some alternatives that should work quite well:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://giscus.app/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;giscus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://utteranc.es/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;utterances&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://disqus.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;disqus&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can see an example of a garden &lt;a href=&quot;https://github.com/uroybd/topobon/blob/main/src/site/_includes/components/user/notes/footer/001-comment.njk&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;using disqus here&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/advanced/guides-and-how-tos/adding-comments/" >
+        </entry>
+        <entry>
+            <title>
+                Adding analytics
+                
+            </title>
+            <updated>2023-07-11T13:42:42.123Z</updated>
+            <id>https://dg-docs.ole.dev/advanced/guides-and-how-tos/adding-analytics/</id>
+            <content type="html">
+                &lt;h2 id=&quot;vercel&quot; tabindex=&quot;-1&quot;&gt;Vercel&lt;/h2&gt;
+&lt;p&gt;If you are using Vercel, you can easily add analytics to your site by following the instructions in &lt;a href=&quot;https://github.com/oleeskild/obsidian-digital-garden/discussions/195&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;this GitHub discussion&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/advanced/guides-and-how-tos/adding-analytics/" >
+        </entry>
+        <entry>
+            <title>
+                Fine grained access token
+                
+            </title>
+            <updated>2024-01-17T13:24:27.689Z</updated>
+            <id>https://dg-docs.ole.dev/advanced/fine-grained-access-token/</id>
+            <content type="html">
+                &lt;p&gt;Recently GitHub launched a more secure way to create an access token. Previously you would need to create a token that had access to all your repos. This isn&#39;t very secure, as a compromised token will give access to all of your repos.&lt;/p&gt;
+&lt;p&gt;It&#39;s a bit more hassle, but you can now create an access token that only have access to the digital garden repo. This is the recommended way to generate your token if you have more repos on your accounts.&lt;/p&gt;
+&lt;p&gt;Remember to regenerate it after the expiration date, as it will no longer work after that date has passed.&lt;/p&gt;
+&lt;p&gt;To generate it, go to &lt;a href=&quot;https://github.com/settings/personal-access-tokens/new&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;this page&lt;/a&gt;, and apply settings as illustrated in the image below:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-12-15%20at%2022.10.03@2x.png&quot; alt=&quot;CleanShot 2022-12-15 at 22.10.03@2x.png&quot; /&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/advanced/fine-grained-access-token/" >
+        </entry>
+        <entry>
+            <title>
+                Dataview queries
+                
+            </title>
+            <updated>2023-03-21T16:03:49.624Z</updated>
+            <id>https://dg-docs.ole.dev/advanced/dataview-queries/</id>
+            <content type="html">
+                &lt;p&gt;The plugin supports publishing dataview query result. Simply publish a page containing a query. The plugin will render the result as it is at the time of publishing. If the result changes, you will need to republish that note.&lt;/p&gt;
+&lt;p&gt;It supports all query types: dataview, dataviewjs, inline dataview and inline dataviewjs.&lt;/p&gt;
+&lt;p&gt;As the plugin &amp;quot;freezes&amp;quot; the result and publishes it, you&#39;ll actually even see the links from a dataview query as backlinks.&lt;/p&gt;
+&lt;p&gt;You need to have version 0.5.39 or later of the dataview plugin installed for this to work.&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/advanced/dataview-queries/" >
+        </entry>
+        <entry>
+            <title>
+                Content Customization
+                
+            </title>
+            <updated>2022-11-13T16:09:15.032Z</updated>
+            <id>https://dg-docs.ole.dev/advanced/content-customization/</id>
+            <content type="html">
+                &lt;h2 id=&quot;custom-image-width&quot; tabindex=&quot;-1&quot;&gt;Custom image width&lt;/h2&gt;
+&lt;p&gt;The plugin supports setting width of images the same way you would do in Obsidian.&lt;/p&gt;
+&lt;p&gt;If you want a transluded image to have a size of 200 px, you would add the following:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2016.48.36@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 16.48.36@2x.png|200&quot; width=&quot;200px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Your image should then be rendered with a max width of 200 px in your site.&lt;/p&gt;
+&lt;h2 id=&quot;custom-link-title&quot; tabindex=&quot;-1&quot;&gt;Custom link title&lt;/h2&gt;
+&lt;p&gt;The plugin supports setting a customer title the same way you would do in Obsidian.&lt;br /&gt;
+If you have a note title &lt;code&gt;My Note&lt;/code&gt; , but want a link to display &lt;code&gt;click here&lt;/code&gt;, you would use the following syntax:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2017.02.25@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 17.02.25@2x.png|300&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;tranclusions&quot; tabindex=&quot;-1&quot;&gt;Tranclusions&lt;/h2&gt;
+&lt;p&gt;By default, transclusion of other documents just renders the content as is. If you want to also include a heading on top of the transclusion you can do so by using the pipe character:&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2017.02.58@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 17.02.58@2x.png|300&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;This will add a h1 header with the value &amp;quot;Heading&amp;quot; at the start of your transclusion.&lt;/p&gt;
+&lt;p&gt;If you want the header to be equal to the title of the transcluded document, you can use this custom syntax:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2017.03.59@2x%201.png&quot; alt=&quot;CleanShot 2022-11-13 at 17.03.59@2x 1.png|300&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;This will replace the heading with the title of the transcluded document when the note is published.&lt;/p&gt;
+&lt;p&gt;You can also use the title syntax inside other text:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2017.04.18@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 17.04.18@2x.png|300&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;specifying-heading-level&quot; tabindex=&quot;-1&quot;&gt;Specifying heading level&lt;/h3&gt;
+&lt;p&gt;You may also specify what heading level you want your transclusion to have. If you want the header to be a h2, you can use this syntax:&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2017.04.58@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 17.04.58@2x.png|300&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;h4 would look like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2017.05.35@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 17.05.35@2x.png|300&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;default-behaviour&quot; tabindex=&quot;-1&quot;&gt;Default behaviour&lt;/h3&gt;
+&lt;p&gt;By just using regular translucion, no header will be added:&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202022-11-13%20at%2017.05.52@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 17.05.52@2x.png|300&quot; width=&quot;300px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;It&#39;s also worth noting that transclusions &lt;em&gt;do not need&lt;/em&gt; the dg-publish attribute.&lt;/p&gt;
+&lt;p&gt;They behave the same as an image. If you transclude something into a document, and publish that document, everything that is transcluded in it will be published as if it was part of that note.&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/advanced/content-customization/" >
+        </entry>
+        <entry>
+            <title>
+                Configure build pipeline
+                
+            </title>
+            <updated>2023-03-09T14:03:54.208Z</updated>
+            <id>https://dg-docs.ole.dev/advanced/configure-build-pipeline/</id>
+            <content type="html">
+                &lt;p&gt;The digital garden uses 11ty when building the site, and markdown-it for rendering markdown to html.&lt;br /&gt;
+If you want to configure either the 11ty build pipeline or the markdown rendering engine you can do so in the &lt;code&gt;src/helpers/userSetup.js&lt;/code&gt; file. There should be two functions there: &lt;code&gt;useMarkdownSetup(md)&lt;/code&gt; and &lt;code&gt;userEleventySetup(eleventyConfig)&lt;/code&gt;. These will be called after all the default setup has been processed, and allows you to do modifications on both the eleventy config and the markdown-it instance. For examples on how these are configured, you can have a look in the &lt;code&gt;.eleventy.js&lt;/code&gt; file in the root directory of your site.&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/advanced/configure-build-pipeline/" >
+        </entry>
+        <entry>
+            <title>
+                Comparison to other solutions
+                
+            </title>
+            <updated>2022-11-21T14:27:31.692Z</updated>
+            <id>https://dg-docs.ole.dev/advanced/comparison-to-other-solutions/</id>
+            <content type="html">
+                &lt;h2 id=&quot;pros&quot; tabindex=&quot;-1&quot;&gt;Pros&lt;/h2&gt;
+&lt;p&gt;One of the main differences between this plugin and other popular digital gardens is that it integrates with Obsidian via a plugin. Disregarding the initial setup, you&#39;ll never have to touch Git. (Unless you want to.) Publishing a new note is as simple as using the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/02-commands/#publish-single-note&quot;&gt;publish single note command&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This also makes it much easier to only publish &lt;em&gt;some&lt;/em&gt; of your notes, instead of your entire vault to your digital garden.&lt;/p&gt;
+&lt;p&gt;Other advantages with integrating so tightly with obsidian is that we can take advantage of the incredible plugins and themes from the community of Obsidian. So far this plugin supports obsidian specific features like Dataview Queries, Excalidraw and Obisidian themes.&lt;/p&gt;
+&lt;p&gt;Because of the various customization options, you can also use it as a simple notesharing solution, creating links to your notes to easily share them with friends and colleagues. No need to enable all the bells and whistles like backlinks, search and graphs if you don&#39;t need them.&lt;/p&gt;
+&lt;h2 id=&quot;cons&quot; tabindex=&quot;-1&quot;&gt;Cons&lt;/h2&gt;
+&lt;p&gt;The downside of this tight coupling with Obsidian is of course that this garden isn&#39;t as easy to integrate with other writing tools than Obsidian, as some of the other gardens is.&lt;/p&gt;
+&lt;p&gt;But if you&#39;ll ever decide to switch to another tool, all your files are still available as plain text, so switching shouldn&#39;t be too hard.&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/advanced/comparison-to-other-solutions/" >
+        </entry>
+        <entry>
+            <title>
+                CSS Customization
+                
+            </title>
+            <updated>2023-02-17T16:16:56.750Z</updated>
+            <id>https://dg-docs.ole.dev/advanced/css-customization/</id>
+            <content type="html">
+                &lt;h2 id=&quot;dynamic-css-scss&quot; tabindex=&quot;-1&quot;&gt;Dynamic CSS/SCSS&lt;/h2&gt;
+&lt;p&gt;Any css/scss files placed under &lt;code&gt;src/site/styles/user&lt;/code&gt; will automatically be linked into the head right after all other styling. Meaning that the styling added here will take presedence over everything else.&lt;/p&gt;
+&lt;h2 id=&quot;available-css-variables&quot; tabindex=&quot;-1&quot;&gt;Available css variables&lt;/h2&gt;
+&lt;p&gt;Not all themes looks good out of the box. The template makes some css variables available to customize various css properties to customize it to your need.&lt;br /&gt;
+Currently the available css variables are&lt;br /&gt;
+&lt;code&gt;--graph-main&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;--graph-muted&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!note] The !important attribute&lt;br /&gt;
+Some styles uses the &lt;code&gt;!important&lt;/code&gt; attribute. This is by most considered bad practice, but it is unfortunately neccessary in some places to override styling coming from whatever theme you&#39;ve chosen. If your changes css changes doesn&#39;t reflect on your site, try adding an &lt;code&gt;!important&lt;/code&gt; behind it and see if that helps.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!warning] Deprecated&lt;br /&gt;
+Previously the only way to add custom styling to the site was to add styling to the &lt;code&gt;custom-styles.scss&lt;/code&gt; file. This is still possible to do, but is considered deprecated.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/advanced/css-customization/" >
+        </entry>
+        <entry>
+            <title>
+                Adding custom components
+                
+            </title>
+            <updated>2023-09-12T10:52:17.949Z</updated>
+            <id>https://dg-docs.ole.dev/advanced/adding-custom-components/</id>
+            <content type="html">
+                &lt;blockquote&gt;
+&lt;p&gt;[!FAQ] Configuring build pipelines&lt;br /&gt;
+For changing the markdown rendering or build pipeline see &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/advanced/configure-build-pipeline/&quot;&gt;Configure build pipeline&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Release 1.39.0 of the template introduced a new way to add custom components to your site. Previously, any customization done in the template would be overwritten whenever you &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://dg-docs.ole.dev/getting-started/06-updating-the-template/&quot;&gt;updated the template&lt;/a&gt;, making it hard to maintain if you wanted the latest update.&lt;/p&gt;
+&lt;p&gt;The template now has the concept of slots, where you can add any content you want. Be it Javascript, HTML or CSS.&lt;/p&gt;
+&lt;h1 id=&quot;available-slots&quot; tabindex=&quot;-1&quot;&gt;Available slots&lt;/h1&gt;
+&lt;h2 id=&quot;notes&quot; tabindex=&quot;-1&quot;&gt;Notes&lt;/h2&gt;
+&lt;h3 id=&quot;namespaces&quot; tabindex=&quot;-1&quot;&gt;Namespaces&lt;/h3&gt;
+&lt;p&gt;These are the namespaces currently supported for notes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;common
+&lt;ul&gt;
+&lt;li&gt;Will be added on both the home page and all note pages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;index
+&lt;ul&gt;
+&lt;li&gt;Will be added on the home page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;notes
+&lt;ul&gt;
+&lt;li&gt;Will be added to alle note pages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;slots&quot; tabindex=&quot;-1&quot;&gt;Slots&lt;/h4&gt;
+&lt;p&gt;These are the supported slots:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;head
+&lt;ul&gt;
+&lt;li&gt;Will be placed inside the html &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; tag&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;header
+&lt;ul&gt;
+&lt;li&gt;Will be placed on top of the page, in the &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; tag, after tags and note title if that is enabled&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;beforeContent
+&lt;ul&gt;
+&lt;li&gt;Will be placed just before the page content&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;afterContent
+&lt;ul&gt;
+&lt;li&gt;Will be placed just after the page content&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;footer
+&lt;ul&gt;
+&lt;li&gt;Will be placed in the footer of the page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;filetree&quot; tabindex=&quot;-1&quot;&gt;Filetree&lt;/h3&gt;
+&lt;h4 id=&quot;namespaces-1&quot; tabindex=&quot;-1&quot;&gt;Namespaces&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;filetree&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;slots-1&quot; tabindex=&quot;-1&quot;&gt;Slots&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;beforeTitle&lt;/li&gt;
+&lt;li&gt;afterTitle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;sidebar&quot; tabindex=&quot;-1&quot;&gt;Sidebar&lt;/h3&gt;
+&lt;h4 id=&quot;namespaces-2&quot; tabindex=&quot;-1&quot;&gt;Namespaces&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;filetree&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;slots-2&quot; tabindex=&quot;-1&quot;&gt;Slots&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;top&lt;/li&gt;
+&lt;li&gt;bottom&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;how-does-it-work&quot; tabindex=&quot;-1&quot;&gt;How does it work?&lt;/h2&gt;
+&lt;p&gt;The files should be placed using the following format:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;src/site/_includes/components/user/&amp;lt;namespace&amp;gt;/&amp;lt;slot&amp;gt;/&amp;lt;filename&amp;gt;.njk
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The components are written in &lt;a href=&quot;https://mozilla.github.io/nunjucks/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Nunjuck&lt;/a&gt;, a templating language for HTML and Javascript. Don&#39;t worry if you don&#39;t know it. You don&#39;t have to use any of the features. Simply writing vanilla HTML will work. If you want to add a script, be sure to add it inside a script tag:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;script&amp;gt;
+	console.log(&amp;quot;hello&amp;quot;)
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The important thing is that the file extension used is &amp;quot;njk&amp;quot;.&lt;/p&gt;
+&lt;p&gt;If you don&#39;t want to inline your scripts, but have them in a separate &lt;code&gt;js&lt;/code&gt; file, you can put them in the &lt;code&gt;src/site/scripts&lt;/code&gt; folder. They can then be referenced like this in your &lt;code&gt;njk&lt;/code&gt; file:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;script src=&amp;quot;/scripts/your-script.js&amp;quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;examples&quot; tabindex=&quot;-1&quot;&gt;Examples&lt;/h3&gt;
+&lt;p&gt;For example to add common content in every pages header right after the title and tags the file should be placed in the following directory:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;src/site/_includes/components/user/common/header/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Say, you have a comment system implemented in a file (e.g. &lt;code&gt;comment.njk&lt;/code&gt;) and you want to use that only in notes pages, put it in the following path:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;src/site/_includes/components/user/notes/footer/comment.njk
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;custom-user-data&quot; tabindex=&quot;-1&quot;&gt;Custom user data&lt;/h2&gt;
+&lt;p&gt;If you want to compute some data in any of your custom &lt;code&gt;*.njk&lt;/code&gt; files, you can modify the &lt;code&gt;src/helpers/userUtils.js&lt;/code&gt; file. If you have the latest version of the template, it should look like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// Put your computations here.
+
+function userComputed(data) {
+  return {};
+}
+
+exports.userComputed = userComputed;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Any properties added to the object return in the userComputed function, will be available to use in your &lt;code&gt;*.njk&lt;/code&gt; files. As an example, the following &lt;code&gt;userUtils.js&lt;/code&gt; file:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// Put your computations here.
+
+function userComputed(data) {
+  return {
+	  city: &#39;Bergen&#39;,
+	  weather: [&amp;quot;rain&amp;quot;, &amp;quot;rain&amp;quot;, &amp;quot;rain&amp;quot;]
+  };
+}
+
+exports.userComputed = userComputed;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;..should make the city and weather property availble in your templates like so:&lt;br /&gt;
+&lt;img src=&quot;https://dg-docs.ole.dev/img/user/img/CleanShot%202023-02-17%20at%2017.19.14.png&quot; alt=&quot;CleanShot 2023-02-17 at 17.19.14.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;dynamic-css-scss&quot; tabindex=&quot;-1&quot;&gt;Dynamic CSS/SCSS&lt;/h2&gt;
+&lt;div class=&quot;transclusion internal-embed is-loaded&quot;&gt;&lt;a class=&quot;markdown-embed-link&quot; href=&quot;https://dg-docs.ole.dev/advanced/css-customization/#dynamic-css-scss&quot; aria-label=&quot;Open link&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; class=&quot;svg-icon lucide-link&quot;&gt;&lt;path d=&quot;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;div class=&quot;markdown-embed&quot;&gt;
+&lt;h2 id=&quot;dynamic-css-scss-1&quot; tabindex=&quot;-1&quot;&gt;Dynamic CSS/SCSS&lt;/h2&gt;
+&lt;p&gt;Any css/scss files placed under &lt;code&gt;src/site/styles/user&lt;/code&gt; will automatically be linked into the head right after all other styling. Meaning that the styling added here will take presedence over everything else.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!info] File order&lt;br /&gt;
+Remember that, the paths for a given slot are always sorted by filename. Therefore, if order matters, you should name files such they maintain the alphabetical order.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;examples-in-the-wild&quot; tabindex=&quot;-1&quot;&gt;Examples in the wild&lt;/h2&gt;
+&lt;p&gt;To get started and see a live example, take a look at GitHub user &lt;a href=&quot;https://github.com/uroybd/topobon/tree/main/src/site/_includes/components/user&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;uroybd&lt;/a&gt; &#39;s garden, &lt;a href=&quot;https://topobon.utsob.me/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;topobon&lt;/a&gt; . He uses components to add a theme switcher and a disqus comment section among other things. You can take a look at how he&#39;s implemented it &lt;a href=&quot;https://github.com/uroybd/topobon/tree/main/src/site/_includes/components/user&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://dg-docs.ole.dev/advanced/adding-custom-components/" >
+        </entry>
+</feed>

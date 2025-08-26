@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Features</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.d92311c2.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section css-settings-manager">
+<div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
+<div x-show.important="!isDesktop" style="display:none">
+<nav class="navbar">
+<div class="navbar-inner">
+<span style="font-size:1.5rem;margin-right:10px" @click="showFilesMobile=!showFilesMobile"><i icon-name="menu"></i></span>
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden Docs</h1>
+</a>
+</div>
+<div class="search-button align-icon" onclick="toggleSearch()">
+<span class="search-icon">
+<i icon-name="search"></i>
+</span>
+<span class="search-text">
+<span>Search</span>
+<span style="font-size:.6rem;padding:2px 2px 0 6px;text-align:center;transform:translateY(4px)" class="search-keys">
+CTRL + K
+</span>
+</span>
+</div>
+</nav>
+</div>
+<div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none" class="fullpage-overlay"></div>
+<nav class="filetree-sidebar" x-show.important="isDesktop || showFilesMobile" style="display:none">
+<a href="/" style="text-decoration:none">
+<h1 style="text-align:center">Digital Garden Docs</h1>
+</a>
+<div style="display:flex;justify-content:center">
+<div class="search-button align-icon" onclick="toggleSearch()">
+<span class="search-icon">
+<i icon-name="search"></i>
+</span>
+<span class="search-text">
+<span>Search</span>
+<span style="font-size:.6rem;padding:2px 2px 0 6px;text-align:center;transform:translateY(4px)" class="search-keys">
+CTRL + K
+</span>
+</span>
+</div>
+</div>
+<div class="folder" x-data="{isOpen: true}">
+<div x-show="isOpen" style="display:none" class="">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Digital Garden - Publish Obsidian Notes For Free </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Advanced')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Advanced</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Advanced/Guides and How-Tos')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Guides and How-Tos</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/advanced/guides-and-how-tos/adding-analytics/">Adding analytics </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/advanced/guides-and-how-tos/adding-comments/">Adding comments </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/advanced/adding-custom-components/">Adding custom components </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/advanced/comparison-to-other-solutions/">Comparison to other solutions </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/advanced/configure-build-pipeline/">Configure build pipeline </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/advanced/content-customization/">Content Customization </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/advanced/css-customization/">CSS Customization </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/advanced/dataview-queries/">Dataview queries </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/advanced/fine-grained-access-token/">Fine grained access token </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/advanced/hosting-alternatives/">Hosting alternatives </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/advanced/note-specific-settings/">Note Specific Settings </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/advanced/roadmap/">Roadmap </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/advanced/tips-and-tricks/">Tips and Tricks </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Example pages')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Example pages</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/example-pages/frontmatter-tag-example/">Frontmatter tag example </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/example-pages/inline-tag-example/">Inline tag example </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/example-pages/simple-page/">Simple Page </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/example-pages/transcluded-document/">Transcluded document </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Getting Started')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Getting Started</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/getting-started/01-getting-started/">01 Getting started </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/getting-started/02-commands/">02 Commands </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/getting-started/03-note-settings/">03 Note settings </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/getting-started/04-appearance-settings/">04 Appearance Settings </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/getting-started/05-other-settings/">05 Other Settings </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/getting-started/06-updating-the-template/">06 Updating the template </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/features/">Features </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/troubleshooting/">Troubleshooting </a>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<div class="search-container" id="globalsearch" onclick="toggleSearch()">
+<div class="search-box">
+<input type="search" id="term" placeholder="Start typing...">
+<div id="search-results"></div>
+<footer class="search-box-footer">
+<div class="navigation-hint">
+<span>Enter to select</span>
+</div>
+<div class="navigation-hint align-icon">
+<i icon-name="arrow-up" aria-hidden="true"></i>
+<i icon-name="arrow-down" aria-hidden="true"></i>
+<span>to navigate</span>
+</div>
+<div class="navigation-hint">
+<span>ESC to close</span>
+</div>
+</footer>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2025-08-26T23:36:16.218Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2025-08-26T23:36:16.218Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2025-08-26T23:36:16.218Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
+<main class="content cm-s-obsidian">
+<header>
+<h1 data-note-icon="">Features</h1>
+<div class="header-meta">
+<div class="header-tags">
+</div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2022-11-10T13:32:48.786+01:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2023-03-21T17:04:45.747+01:00"></span></div></div></div>
+</header>
+<p>You can enable the following features in your digital garden, in the <a class="internal-link" target="" data-note-icon="" href="/getting-started/03-note-settings/">note settings</a>:</p>
+<ul>
+<li>Local Graph</li>
+<li>Global Graph</li>
+<li>Backlinks</li>
+<li>Table Of Content</li>
+<li>Filetree navigation</li>
+<li>Link preview</li>
+<li>Search</li>
+<li>Frontmatter tags</li>
+</ul>
+<p>Additionally the garden supports a variety of formatting and content types in your notes.</p>
+<hr>
+<h2 id="wikilinks" tabindex="-1">Wikilinks</h2>
+<p>Link as you normally would in Obisidan, with the <code>[[Wikilink]]</code> syntax</p>
+<h3 id="header-links" tabindex="-1">Header links</h3>
+<p>Linking to a specific header works the same way as in Obsidian<br>
+<code>[[My Note#Note header]]</code></p>
+<h3 id="block-links" tabindex="-1">Block links</h3>
+<p>Linking to a specific block works the same way as in Obsidian<br>
+<code>[[My Note#^123abc]]</code></p>
+<h3 id="custom-link-names" tabindex="-1">Custom link names</h3>
+<p>Changing display text for a wikilink works the same way as in Obsidian<br>
+<picture src="/img/user/img/CleanShot%202023-01-10%20at%2018.07.56@2x.png" alt="CleanShot 2023-01-10 at 18.07.56@2x.png|250" width="250px"><source media="(max-width:480px)" srcset="/img/optimized/AdrwjxUcLu-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/AdrwjxUcLu-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/AdrwjxUcLu-504.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/AdrwjxUcLu-504.jpeg"><img class="" src="/img/user/img/CleanShot%202023-01-10%20at%2018.07.56@2x.png" alt="CleanShot 2023-01-10 at 18.07.56@2x.png|250" width="250px"></picture></p>
+<hr>
+<h2 id="code-blocks" tabindex="-1">Code Blocks</h2>
+<p><picture src="/img/user/img/CleanShot%202022-11-13%20at%2015.34.22@2x.png" alt="CleanShot 2022-11-13 at 15.34.22@2x.png"><source media="(max-width:480px)" srcset="/img/optimized/43YSmBtvto-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/43YSmBtvto-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/43YSmBtvto-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/43YSmBtvto-700.jpeg"><img class="" src="/img/user/img/CleanShot%202022-11-13%20at%2015.34.22@2x.png" alt="CleanShot 2022-11-13 at 15.34.22@2x.png" width=""></picture></p>
+<pre><code class="language-javascript">let a = 5;
+</code></pre>
+<p><picture src="/img/user/img/CleanShot%202022-11-13%20at%2015.34.59@2x.png" alt="CleanShot 2022-11-13 at 15.34.59@2x.png|200" width="200px"><source media="(max-width:480px)" srcset="/img/optimized/PVkLqg9fPM-346.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/PVkLqg9fPM-346.jpeg">
+<img class="" src="/img/user/img/CleanShot%202022-11-13%20at%2015.34.59@2x.png" alt="CleanShot 2022-11-13 at 15.34.59@2x.png|200" width="200px"></picture><br>
+<code>Some inline code</code></p>
+<hr>
+<h2 id="dataview-queries" tabindex="-1">Dataview queries</h2>
+<pre><code class="language-(dataview)">list from &quot;Advanced&quot;
+</code></pre>
+<ul>
+<li><a class="internal-link" target="" data-note-icon="" href="/advanced/comparison-to-other-solutions/">Comparison to other solutions</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/advanced/adding-custom-components/">Adding custom components</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/advanced/content-customization/">Content Customization</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/advanced/configure-build-pipeline/">Configure build pipeline</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/advanced/dataview-queries/">Dataview queries</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/advanced/css-customization/">CSS Customization</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/advanced/note-specific-settings/">Note Specific Settings</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/advanced/hosting-alternatives/">Hosting alternatives</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/advanced/tips-and-tricks/">Tips and Tricks</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/advanced/fine-grained-access-token/">Fine grained access token</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/advanced/guides-and-how-tos/adding-comments/">Adding comments</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/advanced/guides-and-how-tos/adding-analytics/">Adding analytics</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/advanced/roadmap/">Roadmap</a></li>
+</ul>
+<p>{ .block-language-dataview}<br>
+More details about dataview is available here: <a class="internal-link" target="" data-note-icon="" href="/advanced/dataview-queries/">Dataview queries</a></p>
+<hr>
+<h2 id="callouts" tabindex="-1">Callouts</h2>
+<pre><code>&gt; [!NOTE] Note title
+&gt; Information
+</code></pre>
+<div class="callout" data-callout="note"><div class="callout-title"><div class="callout-title-inner"> Note title<br></div></div>
+<div class="callout-content">
+<p>
+Information</p>
+</div></div>
+<pre><code>&gt; [!WARNING] A warning
+&gt; This is a warning
+</code></pre>
+<div class="callout" data-callout="warning"><div class="callout-title"><div class="callout-title-inner"> A warning<br></div></div>
+<div class="callout-content">
+<p>
+This is a warning</p>
+</div></div>
+<h3 id="folding-callouts" tabindex="-1">Folding Callouts</h3>
+<pre><code>&gt; [!NOTE]+ Open by default
+&gt; Folding/Collapsable callout
+</code></pre>
+<div class="callout is-collapsible" data-callout="note"><div class="callout-title"><div class="callout-title-inner"> Open by default<br></div><div class="callout-fold"><i icon-name="chevron-down"></i></div></div>
+<div class="callout-content">
+<p>
+Folding/Collapsable callout</p>
+</div></div>
+<pre><code>&gt; [!FAQ]- Closed by default
+&gt; Folding/Collapsable callout
+</code></pre>
+<div class="callout is-collapsible is-collapsed" data-callout="faq"><div class="callout-title"><div class="callout-title-inner"> Closed by default<br></div><div class="callout-fold"><i icon-name="chevron-down"></i></div></div>
+<div class="callout-content">
+<p>
+Folding/Collapsable callout</p>
+</div></div>
+<h3 id="nested-callouts" tabindex="-1">Nested callouts</h3>
+<pre><code>&gt; [!TIP] Nested callouts
+&gt; Text inside the tip callout
+&gt; &gt; [!EXAMPLE] Inner callout
+&gt; &gt; Multiple nesting layers
+&gt; &gt; &gt; [!TODO] Inner inner callout
+</code></pre>
+<div class="callout" data-callout="tip"><div class="callout-title"><div class="callout-title-inner"> Nested callouts<br></div></div>
+<div class="callout-content">
+<p>
+Text inside the tip callout</p>
+<div class="callout" data-callout="example"><div class="callout-title"><div class="callout-title-inner"> Inner callout<br></div></div>
+<div class="callout-content">
+<p>
+Multiple nesting layers</p>
+<div class="callout" data-callout="todo"><div class="callout-title"><div class="callout-title-inner"> Inner inner callout</div></div></div>
+</div></div>
+</div></div>
+<hr>
+<h2 id="math-jax-la-tex" tabindex="-1">MathJax / LaTex</h2>
+<p><a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" class="external-link">MathJax Reference</a></p>
+<pre><code>$\frac{1}{0} = \infty$
+</code></pre>
+<mjx-container class="MathJax" jax="SVG" display="true" style="direction:ltr;display:block;text-align:center;margin:1em 0;position:relative"><svg style="overflow:visible;min-height:1px;min-width:1px;vertical-align:-1.602ex" xmlns="http://www.w3.org/2000/svg" width="7.406ex" height="4.638ex" role="img" focusable="false" viewBox="0 -1342 3273.6 2050" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mfrac"><g data-mml-node="mn" transform="translate(220,676)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" style="stroke-width:3"></path></g><g data-mml-node="mn" transform="translate(220,-686)"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" style="stroke-width:3"></path></g><rect width="700" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(1217.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z" style="stroke-width:3"></path></g><g data-mml-node="mi" transform="translate(2273.6,0)"><path data-c="221E" d="M55 217Q55 305 111 373T254 442Q342 442 419 381Q457 350 493 303L507 284L514 294Q618 442 747 442Q833 442 888 374T944 214Q944 128 889 59T743 -11Q657 -11 580 50Q542 81 506 128L492 147L485 137Q381 -11 252 -11Q166 -11 111 57T55 217ZM907 217Q907 285 869 341T761 397Q740 397 720 392T682 378T648 359T619 335T594 310T574 285T559 263T548 246L543 238L574 198Q605 158 622 138T664 94T714 61T765 51Q827 51 867 100T907 217ZM92 214Q92 145 131 89T239 33Q357 33 456 193L425 233Q364 312 334 337Q285 380 233 380Q171 380 132 331T92 214Z" style="stroke-width:3"></path></g></g></g></svg><mjx-assistive-mml unselectable="on" display="block" style="top:0;left:0;clip:rect(1px,1px,1px,1px);-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:absolute;padding:1px 0 0 0;border:0;display:block;overflow:hidden;width:100%"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mfrac><mn>1</mn><mn>0</mn></mfrac><mo>=</mo><mi mathvariant="normal">∞</mi></math></mjx-assistive-mml></mjx-container><hr>
+<h2 id="tags" tabindex="-1">Tags</h2>
+<p>Click on the tag below to view other pages with the same tag.</p>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#exampletag">#exampletag</a></p>
+<hr>
+<h2 id="embedded-transcluded-images" tabindex="-1">Embedded/Transcluded Images</h2>
+<p><picture src="/img/user/img/CleanShot%202022-11-13%20at%2014.24.21@2x.png" alt="CleanShot 2022-11-13 at 14.24.21@2x.png|250" width="250px"><source media="(max-width:480px)" srcset="/img/optimized/S8nEB-N8-9-488.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/S8nEB-N8-9-488.jpeg">
+<img class="" src="/img/user/img/CleanShot%202022-11-13%20at%2014.24.21@2x.png" alt="CleanShot 2022-11-13 at 14.24.21@2x.png|250" width="250px"></picture></p>
+<p><picture src="/img/user/img/obsidianlogo.png" alt="obsidianlogo.png"><source media="(max-width:480px)" srcset="/img/optimized/Pg3-berain-200.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/Pg3-berain-200.jpeg">
+<img class="" src="/img/user/img/obsidianlogo.png" alt="obsidianlogo.png" width=""></picture></p>
+<h2 id="transcluded-documents" tabindex="-1">Transcluded documents</h2>
+<h3 id="whole-file" tabindex="-1">Whole file</h3>
+<p><picture src="/img/user/img/CleanShot%202022-11-13%20at%2014.24.50@2x.png" alt="CleanShot 2022-11-13 at 14.24.50@2x.png|250" width="250px"><source media="(max-width:480px)" srcset="/img/optimized/WRQ9ERECHc-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/WRQ9ERECHc-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/WRQ9ERECHc-624.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/WRQ9ERECHc-624.jpeg"><img class="" src="/img/user/img/CleanShot%202022-11-13%20at%2014.24.50@2x.png" alt="CleanShot 2022-11-13 at 14.24.50@2x.png|250" width="250px"></picture></p>
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/example-pages/transcluded-document/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+<p>This is a transcluded note.</p>
+<p>This is a block in a transcluded document</p>
+<h3 id="this-is-a-header" tabindex="-1">This is a header</h3>
+<p>Content</p>
+<h4 id="this-is-a-subheader" tabindex="-1">This is a subheader</h4>
+</div></div>
+<h3 id="header-block" tabindex="-1">Header block</h3>
+<p><picture src="/img/user/img/CleanShot%202023-01-05%20at%2017.22.10.png" alt="CleanShot 2023-01-05 at 17.22.10.png"><source media="(max-width:480px)" srcset="/img/optimized/YTGDz8kRRL-374.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/YTGDz8kRRL-374.jpeg">
+<img class="" src="/img/user/img/CleanShot%202023-01-05%20at%2017.22.10.png" alt="CleanShot 2023-01-05 at 17.22.10.png" width=""></picture></p>
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/example-pages/transcluded-document/#this-is-a-header" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+<h3 id="this-is-a-header-1" tabindex="-1">This is a header</h3>
+<p>Content</p>
+<h4 id="this-is-a-subheader-1" tabindex="-1">This is a subheader</h4>
+</div></div>
+<h3 id="single-block" tabindex="-1">Single Block</h3>
+<p><picture src="/img/user/img/CleanShot%202023-01-05%20at%2017.22.27.png" alt="CleanShot 2023-01-05 at 17.22.27.png"><source media="(max-width:480px)" srcset="/img/optimized/EF-XvaMQz_-324.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/EF-XvaMQz_-324.jpeg">
+<img class="" src="/img/user/img/CleanShot%202023-01-05%20at%2017.22.27.png" alt="CleanShot 2023-01-05 at 17.22.27.png" width=""></picture></p>
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/example-pages/transcluded-document/#02502a" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+<p>This is a block in a transcluded document</p>
+</div></div>
+<p>It's also worth noting that transclusions <em>do not need</em> the dg-publish attribute. They behave the same as an image. If you transclude something into a document, and publish that document, everything that is transcluded in it will be published as if it was part of that note.</p>
+<p>(More details on transclusion can be read here: <a class="internal-link" target="" data-note-icon="" href="/advanced/content-customization/#tranclusions">Content Customization#Tranclusions</a> )</p>
+<hr>
+<h2 id="excalidraw" tabindex="-1">Excalidraw</h2>
+<p><picture src="/img/user/img/CleanShot%202022-11-13%20at%2014.25.34@2x.png" alt="CleanShot 2022-11-13 at 14.25.34@2x.png|350" width="350px"><source media="(max-width:480px)" srcset="/img/optimized/7nFu3HoV0u-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/7nFu3HoV0u-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/7nFu3HoV0u-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/7nFu3HoV0u-700.jpeg"><img class="" src="/img/user/img/CleanShot%202022-11-13%20at%2014.25.34@2x.png" alt="CleanShot 2022-11-13 at 14.25.34@2x.png|350" width="350px"></picture></p>
+<style>.container{font-family:sans-serif;text-align:center}.button-wrapper button{z-index:1;height:40px;width:100px;margin:10px;padding:5px}.excalidraw .App-menu_top .buttonList{display:flex}.excalidraw-wrapper{height:800px;margin:50px;position:relative}:root[dir=ltr] .excalidraw .layer-ui__wrapper .zen-mode-transition.App-menu_bottom--transition-left{transform:none}</style><script src="https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js"></script><script src="https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@excalidraw/excalidraw@0/dist/excalidraw.production.min.js"></script><div id="circleandsquareexcalidraw.md1"></div><script>!function(){const e={type:"excalidraw",version:2,source:"https://excalidraw.com",elements:[{id:"f8hC_7cbuAskISt7LXHyU",type:"freedraw",x:-195.4453125,y:-145.6796875,width:212.66796875,height:190.98828125,angle:0,strokeColor:"#000000",backgroundColor:"transparent",fillStyle:"hachure",strokeWidth:1,strokeStyle:"solid",roughness:1,opacity:100,groupIds:[],strokeSharpness:"round",seed:30617569,version:183,versionNonce:654234753,isDeleted:!1,boundElements:null,updated:1668345152727,link:null,locked:!1,points:[[0,0],[0,.15625],[0,1.23046875],[0,2.83984375],[0,4.28515625],[0,7.6953125],[0,9.6640625],[0,13.1640625],[0,17.015625],[0,22.5234375],[0,29.53515625],[0,37.2734375],[0,45.875],[0,55.23046875],[0,65.99609375],[0,78.390625],[0,101.140625],[0,109.53515625],[0,119.484375],[.26171875,128.25],[.7421875,133.80078125],[1.1875,137.5390625],[1.65625,141.57421875],[2.12109375,144.9609375],[2.5546875,148.0078125],[3.1328125,152.25],[3.31640625,153.8984375],[3.6484375,155.31640625],[3.82421875,156.66015625],[3.96484375,157.5859375],[4.08203125,158.16796875],[4.08203125,158.71875],[4.08203125,159.1015625],[4.11328125,159.359375],[4.2421875,159.62109375],[4.3359375,159.84375],[4.44140625,159.93359375],[4.61328125,159.93359375],[4.8828125,159.93359375],[5.4609375,159.93359375],[6.421875,159.93359375],[7.984375,159.93359375],[10.1875,159.8203125],[12.984375,159.48828125],[16.59765625,158.88671875],[22.21875,157.921875],[29.9140625,156.9140625],[38.36328125,156.171875],[47.16796875,155.75390625],[68.17578125,155.65234375],[81.4453125,155.65234375],[95.55859375,155.65234375],[110.7890625,155.9765625],[126.7265625,156.69921875],[142.23046875,157.48828125],[153.80078125,158.1875],[163.72265625,158.84765625],[175.1015625,159.22265625],[185.07421875,159.24609375],[193.45703125,159.24609375],[198.71875,159.24609375],[202.27734375,159.24609375],[205.98046875,159.24609375],[208.34375,159.24609375],[209.92578125,159.2578125],[211.07421875,159.4140625],[211.80078125,159.5546875],[212.19921875,159.5546875],[212.4375,159.5546875],[212.6640625,159.5546875],[212.66796875,159.5546875],[211.76953125,158.578125],[210.1796875,156.59375],[207.35546875,152.21875],[205.546875,149.546875],[202.64453125,144.99609375],[200.33203125,140.8984375],[198.26953125,136.55859375],[195.59375,130.42578125],[192.47265625,122.39453125],[189.80078125,114.02734375],[187.2890625,105.08984375],[184.60546875,94.85546875],[182.0390625,83.26171875],[179.8125,71.16796875],[177.67578125,59.07421875],[175.56640625,47.41796875],[174.1328125,38.36328125],[173.08203125,29.59765625],[172.06640625,19.2578125],[171.3984375,10.234375],[171.08203125,4.67578125],[170.80078125,.07421875],[170.52734375,-5.10546875],[170.28515625,-9.5078125],[170.02734375,-18.03515625],[169.8125,-21.953125],[169.59375,-24.11328125],[169.40625,-25.7421875],[169.2421875,-27.31640625],[169.2109375,-28.46875],[169.05078125,-29.35546875],[168.88671875,-29.9375],[168.7421875,-30.359375],[168.6328125,-30.703125],[168.52734375,-30.80078125],[168.40625,-30.80078125],[168.390625,-30.8828125],[168.390625,-31.0078125],[168.28515625,-31.0546875],[168.09375,-31.0546875],[167.87109375,-31.0546875],[167.60546875,-30.98046875],[167.38671875,-30.8046875],[166.984375,-30.25],[166.359375,-29.48828125],[165.52734375,-28.68359375],[164.5078125,-27.82421875],[162.3125,-26.0546875],[160.44140625,-24.8671875],[158.2734375,-23.6875],[156.21875,-22.73046875],[153.6796875,-21.7421875],[150.5625,-20.6640625],[147.046875,-19.51953125],[143.34375,-18.28515625],[139.62109375,-16.890625],[135.90625,-15.59765625],[132.23828125,-14.44921875],[128.41015625,-13.296875],[124.33203125,-12.3203125],[120.2421875,-11.58984375],[115.99609375,-10.8671875],[107.15234375,-9.3984375],[102.68359375,-8.796875],[98.28515625,-8.1640625],[94.1484375,-7.453125],[90.08984375,-6.73046875],[85.7890625,-5.83984375],[81.57421875,-5.03125],[74.109375,-4.03515625],[70.66015625,-3.7890625],[67.15625,-3.74609375],[64.4453125,-3.74609375],[61.5,-3.74609375],[58.68359375,-3.74609375],[56.24609375,-3.74609375],[53.83203125,-3.74609375],[49.203125,-3.19140625],[47.06640625,-2.99609375],[44.90625,-2.8046875],[42.69140625,-2.62109375],[39.953125,-2.61328125],[37.28125,-2.41796875],[35.30859375,-2.21484375],[32.4453125,-1.9765625],[29.62890625,-1.75390625],[27.90625,-1.7265625],[25.74609375,-1.53125],[23.65625,-1.36328125],[21.8515625,-1.36328125],[20.2578125,-1.36328125],[18.875,-1.36328125],[17.546875,-1.36328125],[16.421875,-1.36328125],[15.5078125,-1.36328125],[14.78515625,-1.36328125],[14.1953125,-1.36328125],[13.61328125,-1.36328125],[13.08984375,-1.36328125],[12.71875,-1.36328125],[12.23828125,-1.36328125],[12.07421875,-1.36328125],[11.94921875,-1.36328125],[11.796875,-1.36328125],[11.6015625,-1.36328125],[11.3828125,-1.36328125],[10.91015625,-1.36328125],[10.7109375,-1.36328125],[10.44921875,-1.36328125],[10.2109375,-1.36328125],[10.2109375,-1.36328125]],pressures:[],simulatePressure:!0,lastCommittedPoint:[10.2109375,-1.36328125]},{id:"_aZMwmY7FgcONG1cvm0G2",type:"freedraw",x:177.234375,y:-154.55078125,width:151.44921875,height:185.6015625,angle:0,strokeColor:"#000000",backgroundColor:"transparent",fillStyle:"hachure",strokeWidth:1,strokeStyle:"solid",roughness:1,opacity:100,groupIds:[],strokeSharpness:"round",seed:1818718223,version:131,versionNonce:1618845231,isDeleted:!1,boundElements:null,updated:1668345154627,link:null,locked:!1,points:[[0,0],[0,-.12890625],[-.234375,-.2578125],[-1.08984375,-.2578125],[-2.02734375,-.2578125],[-3.51171875,-.2578125],[-5.16796875,-.171875],[-9.39453125,.88671875],[-12.9609375,1.93359375],[-18.1015625,3.53125],[-22.85546875,5.16015625],[-35.65234375,10.47265625],[-43.328125,14.3828125],[-50.73046875,18.80859375],[-57.0859375,23.06640625],[-62.66015625,27.09375],[-75.5859375,37.765625],[-80.89453125,42.44140625],[-85.57421875,47.23046875],[-89.71484375,51.6484375],[-93.0546875,55.68359375],[-96.1796875,60.4921875],[-99.2421875,65.9765625],[-101.7109375,71.29296875],[-103.875,76.91015625],[-105.79296875,83.08203125],[-108.41015625,96.8984375],[-109.28515625,104.05859375],[-109.5625,110.98046875],[-109.5625,117.20703125],[-109.5625,122.58203125],[-109.5625,127.80078125],[-109.5625,133.08984375],[-109.5625,138.33984375],[-109.42578125,143.50390625],[-108.41796875,148.5625],[-106.20703125,153.56640625],[-103.39453125,158.6015625],[-100.07421875,163.26953125],[-96.421875,167.4453125],[-92.84765625,171.375],[-89.19140625,174.78125],[-85.21484375,177.640625],[-81.1015625,179.8984375],[-77.09375,181.68359375],[-72.9296875,183.0625],[-68.34375,183.84765625],[-63.48046875,184.359375],[-58.8359375,184.859375],[-54.2578125,185.22265625],[-49.640625,185.34375],[-45.12109375,185.34375],[-40.46875,185.34375],[-35.8984375,185.34375],[-31.52734375,185.19140625],[-27.13671875,184.63671875],[-22.90234375,183.59375],[-14.7734375,180.3984375],[-10.9296875,178.55859375],[-7.11328125,176.46875],[-3.55859375,174.53515625],[-.09765625,172.6875],[3.33984375,170.66796875],[6.59375,168.60546875],[9.9140625,166.45703125],[13.3203125,163.83203125],[16.64453125,161.21484375],[19.96484375,158.58984375],[22.265625,156.37109375],[25.1328125,153.0390625],[27.99609375,149.6796875],[29.47265625,147.5546875],[31.875,143.9453125],[34.18359375,140.421875],[35.4375,137.65625],[36.49609375,134.83984375],[37.52734375,131.98828125],[38.4140625,128.609375],[39.29296875,124.89453125],[39.94140625,121.18359375],[40.38671875,117.59765625],[40.8515625,113.796875],[41.3359375,109.65625],[41.73046875,105.63671875],[41.88671875,101.35546875],[41.88671875,96.5390625],[41.88671875,91.87890625],[41.88671875,87.44921875],[41.88671875,79.1328125],[41.7578125,75.58203125],[41.40625,71.80078125],[41.09375,68.8359375],[40.7734375,66.1875],[40.234375,63.2578125],[39.57421875,60.3203125],[38.78515625,57.24609375],[37.83203125,54.5703125],[36.69921875,52.15625],[35.625,49.87890625],[34.66015625,47.8984375],[33.55859375,45.828125],[31.24609375,41.71875],[30.26171875,39.83984375],[29.3125,38.1015625],[28.2265625,36.41015625],[27.1328125,34.9140625],[26.02734375,33.578125],[24.89453125,32.09765625],[23.78515625,30.78125],[22.7265625,29.70703125],[21.734375,28.8671875],[20.953125,28.2421875],[20.3515625,27.6484375],[19.765625,27.0625],[19.17578125,26.4609375],[18.57421875,25.69140625],[18.08984375,24.93359375],[17.453125,24.3203125],[16.703125,23.73046875],[15.3125,22.81640625],[14.5234375,22.375],[13.75,22.1015625],[13.02734375,21.94140625],[12.48828125,21.76171875],[12.0625,21.44140625],[11.6328125,20.96484375],[11.23046875,20.30859375],[10.921875,19.5390625],[10.6171875,18.765625],[10.6171875,18.765625]],pressures:[],simulatePressure:!0,lastCommittedPoint:[10.6171875,18.765625]}],appState:{theme:"light",viewBackgroundColor:"#ffffff",currentItemStrokeColor:"#000000",currentItemBackgroundColor:"transparent",currentItemFillStyle:"hachure",currentItemStrokeWidth:1,currentItemStrokeStyle:"solid",currentItemRoughness:1,currentItemOpacity:100,currentItemFontFamily:1,currentItemFontSize:20,currentItemTextAlign:"left",currentItemStrokeSharpness:"sharp",currentItemStartArrowhead:null,currentItemEndArrowhead:"arrow",currentItemLinearStrokeSharpness:"round",gridSize:null,colorPalette:{}},files:{},scrollToContent:!0};App=()=>{const t=React.useRef(null),r=React.useRef(null),[n,i]=React.useState({width:void 0,height:void 0});return React.useEffect((()=>{i({width:r.current.getBoundingClientRect().width,height:r.current.getBoundingClientRect().height});const e=()=>{i({width:r.current.getBoundingClientRect().width,height:r.current.getBoundingClientRect().height})};return window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)}),[r]),React.createElement(React.Fragment,null,React.createElement("div",{className:"excalidraw-wrapper",ref:r},React.createElement(ExcalidrawLib.Excalidraw,{ref:t,width:n.width,height:n.height,initialData:e,viewModeEnabled:!0,zenModeEnabled:!0,gridModeEnabled:!1})))},excalidrawWrapper=document.getElementById("circleandsquareexcalidraw.md1"),ReactDOM.render(React.createElement(App),excalidrawWrapper)}()</script>
+<div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner">Info</div></div>
+<div class="callout-content">
+<p>
+Obsidian specific features like linking to other notes inside the drawings are currently not supported</p>
+</div></div>
+<hr>
+<h2 id="mermaid-diagrams" tabindex="-1">Mermaid diagrams</h2>
+<p><picture src="/img/user/img/CleanShot%202022-11-13%20at%2014.26.47@2x.png" alt="CleanShot 2022-11-13 at 14.26.47@2x.png"><source media="(max-width:480px)" srcset="/img/optimized/6A5W5evLkl-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/6A5W5evLkl-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/6A5W5evLkl-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/6A5W5evLkl-700.jpeg"><img class="" src="/img/user/img/CleanShot%202022-11-13%20at%2014.26.47@2x.png" alt="CleanShot 2022-11-13 at 14.26.47@2x.png" width=""></picture></p>
+<pre class="mermaid">graph LR;
+		A-->B</pre><p><picture src="/img/user/img/CleanShot%202022-11-13%20at%2014.27.14@2x.png" alt="CleanShot 2022-11-13 at 14.27.14@2x.png"><source media="(max-width:480px)" srcset="/img/optimized/P-NF9xnv6_-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/P-NF9xnv6_-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/P-NF9xnv6_-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/P-NF9xnv6_-700.jpeg"><img class="" src="/img/user/img/CleanShot%202022-11-13%20at%2014.27.14@2x.png" alt="CleanShot 2022-11-13 at 14.27.14@2x.png" width=""></picture></p>
+<pre class="mermaid">gantt
+	    title A Gantt Diagram
+	    dateFormat  YYYY-MM-DD
+	    section Section
+	    A task           :a1, 2014-01-01, 30d
+	    Another task     :after a1  , 20d
+	    section Another
+	    Task in sec      :2014-01-12  , 12d
+	    another task     : 24d</pre><hr>
+<h2 id="plant-uml-diagrams" tabindex="-1">PlantUML diagrams</h2>
+<img src="https://www.plantuml.com/plantuml/svg/jLHTRzem57tthxWAhnjBCsWx52AwJdkRLAsR-a1vkCGtmIAn8zk8TjF--wuXq9HHrZqiaHBhVfvphks9ysZzggx4PB_oobS4jwRmQxIyU7IUQdWBrqPxL9gi4wAYmeCtO5Mvy22LfTmheuLmIwKRj5Z3Jm7W5YZDMkaI2gmSiGMjDUlFNEbM_I0uYzaagS1LvR_HWx-gLAbhqXvo_f1bxzfYSwUaNq0IX-WQ7xwGSrXIMo4MluHOA4d0E2qP_zXG5qU0XhgiA4rtdBQK-f_GunmTPTa6x4VCbwKrAoslJMKiz0RlBwKSiYVWRMt5vWdHnagohJMXy-H3Y6pJBQl4U1dP4uw6XJCwJRyxiYzrZ2y7oSNyDHtZOKB3ysSDNYPwH_EhfgbKZc58_vEksBA4Q3mEFEzrwdXAexCuczviFBFqNR1a4UoLG0TXnRcCYESAqS7UkzVJ0yiif3ydsR9wakDcMwq3_4XARx1vZYNkLJYH5YJOgHuuiz3GKRfBVtzwkWhyRKuipScGm_wx7VslZJiduS-MEsSORnWKzAUzYpYyR_n2vKlDnt6SpFhPQQmmWYZDWw2ZDZtZQYuIfxDUsso7yaYRhuJIGM5D3QWbtoZAa-FRAn8Jqd9p-Mt_lm40" alt="uml diagram">
+<hr>
+<h2 id="highlighted-text" tabindex="-1">Highlighted text</h2>
+<p><picture src="/img/user/img/CleanShot%202022-12-12%20at%2016.14.14@2x.png" alt="CleanShot 2022-12-12 at 16.14.14@2x.png"><source media="(max-width:480px)" srcset="/img/optimized/oXYqtykaO7-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/oXYqtykaO7-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/oXYqtykaO7-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/oXYqtykaO7-700.jpeg"><img class="" src="/img/user/img/CleanShot%202022-12-12%20at%2016.14.14@2x.png" alt="CleanShot 2022-12-12 at 16.14.14@2x.png" width=""></picture></p>
+<p><mark>Here is some highlighted text</mark></p>
+<hr>
+<h2 id="footnotes" tabindex="-1">Footnotes</h2>
+<pre><code class="language-markdown">There is a footnote here [^1]
+</code></pre>
+<p>There is a footnote here <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<hr>
+<h2 id="checkboxes" tabindex="-1">Checkboxes</h2>
+<pre><code class="language-markdown">- [ ] Uncheckd
+- [x] Checked
+</code></pre>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> Uncheckd</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_1" checked="true" disabled="true"><label for="cbx_1"> Checked</label></li>
+</ul>
+<hr>
+<h2 id="sitemap" tabindex="-1">Sitemap</h2>
+<p>The site automatically generates a sitemap.xml file, available at <code>/sitemap.xml</code> on your site. This helps search engines properly index your site, making it more discoverable. For the sitemap to be properly formatted with the full URL for all your pages, the plugin needs to know the base URL of your site. By adding your URL to the plugin settings, the sitemap should automatically be generated using that value.</p>
+<p><picture src="/img/user/img/CleanShot%202022-12-15%20at%2022.00.24@2x.png" alt="CleanShot 2022-12-15 at 22.00.24@2x.png"><source media="(max-width:480px)" srcset="/img/optimized/iD8riAPDWJ-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/iD8riAPDWJ-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/iD8riAPDWJ-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/iD8riAPDWJ-700.jpeg"><img class="" src="/img/user/img/CleanShot%202022-12-15%20at%2022.00.24@2x.png" alt="CleanShot 2022-12-15 at 22.00.24@2x.png" width=""></picture></p>
+<hr>
+<h2 id="atom-rss-feed" tabindex="-1">Atom/RSS feed</h2>
+<p>The site automatically generates an Atom/RSS feed available at <code>/feed.xml</code> on your site. In order for this to be generated you need to add your Base URL in the settings, like in the image above.<br>
+For the dates to work properly, you need to enable the <a class="internal-link" target="" data-note-icon="" href="/getting-started/04-appearance-settings/#timestamps-settings">Show updated timestamp</a> setting under the plugin's Appearance settings. If this is not enabled, the feed will use the last date the site was built, which in practice means the last date you last published anything to the site.</p>
+<hr>
+<h2 id="footnote-source" tabindex="-1">Footnote source</h2>
+<pre><code class="language-markdown">[^1]: Here are some extra information in a footnote
+</code></pre>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Here are some extra information in a footnote <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</main>
+<aside>
+<div class="sidebar">
+<div class="sidebar-container">
+<script>async function fetchGraphData(){const e=await fetch("/graph.json").then((e=>e.json()));return{graphData:e,fullGraphData:filterFullGraphData(e)}}function getNextLevelNeighbours(e,t){const n=Object.values(e).map((e=>e.neighbors)).flat();return Object.keys(t).reduce(((r,l)=>(-1!=n.indexOf(l)?t[l].hide||(e[l]=t[l]):r[l]=t[l],r)),{})}function filterLocalGraphData(e,t){if(null==e)return null;let n=JSON.parse(JSON.stringify(e.nodes)),r=JSON.parse(JSON.stringify(e.links)),l=n[decodeURI(window.location.pathname)]||Object.values(n).find((e=>e.home));if(delete n[l.url],!l.home){delete n[Object.values(n).find((e=>e.home)).url]}l.current=!0;let i={};i[l.url]=l;for(let e=0;e<t;e++)n=getNextLevelNeighbours(i,n);nodes=Object.values(i),l.home||(nodes=nodes.filter((e=>!e.home)));let o=nodes.map((e=>e.id));return{nodes:nodes,links:r.filter((function(e){return o.indexOf(e.target)>-1&&o.indexOf(e.source)>-1}))}}function getCssVar(e){return getComputedStyle(document.body).getPropertyValue(e)}function htmlDecode(e){return(new DOMParser).parseFromString(e,"text/html").documentElement.textContent}function renderGraph(e,t,n,r){if(null==e)return;const l=document.getElementById(t);width=l.offsetWidth,height=l.offsetHeight;const i=new Set;let o=null;const a=getCssVar("--graph-main"),s=getCssVar("--graph-muted");let u=ForceGraph()(l).graphData(e).nodeId("id").nodeLabel("title").linkSource("source").linkTarget("target").d3AlphaDecay(.1).width(width).height(height).linkDirectionalArrowLength(2).linkDirectionalArrowRelPos(.5).autoPauseRedraw(!1).linkColor((e=>null==o||e.source.id==o.id||e.target.id==o.id?a:s)).nodeCanvasObject(((e,t)=>{const n=e.neighbors&&e.neighbors.length||2,r=Math.min(7,Math.max(n/2,2));t.beginPath(),t.arc(e.x,e.y,r,0,2*Math.PI,!1),null==o||e==o||i.has(e.url)?t.fillStyle=a:t.fillStyle=s,t.fill(),e.current&&(t.beginPath(),t.arc(e.x,e.y,r+1,0,2*Math.PI,!1),t.lineWidth=.5,t.strokeStyle=a,t.stroke());const l=htmlDecode(e.title);t.font="3.5px Sans-Serif",t.textAlign="center",t.textBaseline="top",t.fillText(l,e.x,e.y+r+2)})).onNodeClick((e=>{window.location=e.url})).onNodeHover((e=>{i.clear(),e&&(i.add(e),e.neighbors.forEach((e=>i.add(e)))),o=e||null}));return(r||null!=n&&e.nodes.length>4)&&setTimeout((()=>{u.zoomToFit(5,75)}),n||200),u}function renderLocalGraph(e,t,n){window.graph&&window.graph._destructor();return renderGraph(filterLocalGraphData(e,t),"link-graph",null,n)}function filterFullGraphData(e){if(null==e)return null;e=JSON.parse(JSON.stringify(e));const t=Object.values(e.nodes).filter((e=>e.hide)).map((e=>e.id));return{links:JSON.parse(JSON.stringify(e.links)).filter((e=>-1==t.indexOf(e.source)&&-1==t.indexOf(e.target))),nodes:[...Object.values(e.nodes).filter((e=>!e.hide))]}}function openFullGraph(e){return lucide.createIcons({attrs:{class:["svg-icon"]}}),renderGraph(e,"full-graph-container",200,!1)}function closefullGraph(e){return e&&e._destructor(),null}</script>
+<div x-init="{graphData, fullGraphData} = await fetchGraphData();" x-data="{ graphData: null, depth: 1, graph: null, fullGraph: null, showFullGraph: false, fullScreen: false, fullGraphData: null}" id="graph-component" x-bind:class="fullScreen ? 'graph graph-fs' : 'graph'" v-scope>
+<div class="graph-title-container">
+<div class="graph-title">Connected Pages</div>
+<div id="graph-controls">
+<div class="depth-control">
+<label for="graph-depth">Depth</label>
+<div class="slider">
+<input x-model.number="depth" name="graph-depth" list="depthmarkers" type="range" step="1" min="1" max="3" id="graph-depth">
+<datalist id="depthmarkers">
+<option value="1" label="1"></option>
+<option value="2" label="2"></option>
+<option value="3" label="3"></option>
+</datalist>
+</div>
+<span id="depth-display" x-text="depth"></span>
+</div>
+<div class="ctrl-right">
+<span id="global-graph-btn" x-on:click="showFullGraph = true; setTimeout(() => {fullGraph = openFullGraph(fullGraphData)}, 100)"><i icon-name="globe" aria-hidden="true"></i></span>
+<span id="graph-fs-btn" x-on:click="fullScreen = !fullScreen"><i icon-name="expand" aria-hidden="true"></i></span>
+</div>
+</div>
+</div>
+<div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph"></div>
+<div x-show="showFullGraph" id="full-graph" class="show" style="display:none">
+<span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
+</div>
+</div>
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#wikilinks">Wikilinks</a>
+<ol>
+<li><a href="#header-links">Header links</a>
+</li>
+<li><a href="#block-links">Block links</a>
+</li>
+<li><a href="#custom-link-names">Custom link names</a>
+</li>
+</ol>
+</li>
+<li><a href="#code-blocks">Code Blocks</a>
+</li>
+<li><a href="#dataview-queries">Dataview queries</a>
+</li>
+<li><a href="#callouts">Callouts</a>
+<ol>
+<li><a href="#folding-callouts">Folding Callouts</a>
+</li>
+<li><a href="#nested-callouts">Nested callouts</a>
+</li>
+</ol>
+</li>
+<li><a href="#math-jax-la-tex">MathJax / LaTex</a>
+</li>
+<li><a href="#tags">Tags</a>
+</li>
+<li><a href="#embedded-transcluded-images">Embedded/Transcluded Images</a>
+</li>
+<li><a href="#transcluded-documents">Transcluded documents</a>
+<ol>
+<li><a href="#whole-file">Whole file</a>
+</li>
+<li><a href="#this-is-a-header">This is a header</a>
+<ol>
+<li><a href="#this-is-a-subheader">This is a subheader</a>
+</li>
+</ol>
+</li>
+<li><a href="#header-block">Header block</a>
+</li>
+<li><a href="#this-is-a-header-1">This is a header</a>
+<ol>
+<li><a href="#this-is-a-subheader-1">This is a subheader</a>
+</li>
+</ol>
+</li>
+<li><a href="#single-block">Single Block</a>
+</li>
+</ol>
+</li>
+<li><a href="#excalidraw">Excalidraw</a>
+</li>
+<li><a href="#mermaid-diagrams">Mermaid diagrams</a>
+</li>
+<li><a href="#plant-uml-diagrams">PlantUML diagrams</a>
+</li>
+<li><a href="#highlighted-text">Highlighted text</a>
+</li>
+<li><a href="#footnotes">Footnotes</a>
+</li>
+<li><a href="#checkboxes">Checkboxes</a>
+</li>
+<li><a href="#sitemap">Sitemap</a>
+</li>
+<li><a href="#atom-rss-feed">Atom/RSS feed</a>
+</li>
+<li><a href="#footnote-source">Footnote source</a>
+</li>
+</ol>
+</nav>
+</div>
+</div>
+<div class="backlinks">
+<div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
+<div class="backlink-list"><div class="backlink-card"><i icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Digital Garden - Publish Obsidian Notes For Free</a>
+</div><div class="backlink-card"><i icon-name="link"></i><a href="/example-pages/simple-page/" data-note-icon="" class="backlink">Simple Page</a>
+</div></div>
+</div>
+</div>
+</div>
+</aside>
+<style>#tooltip-wrapper{background:var(--background-primary);padding:1em;border-radius:4px;overflow:hidden;position:fixed;width:80%;max-width:400px;height:auto;max-height:300px;font-size:.8em;box-shadow:0 5px 10px rgba(0,0,0,.1);opacity:0;transition:opacity .1s;unicode-bidi:plaintext;overflow-y:scroll;z-index:10}#tooltip-wrapper:after{content:"";position:absolute;z-index:1;bottom:0;left:0;pointer-events:none;width:100%;unicode-bidi:plaintext;height:75px}</style>
+<div style="opacity:0;display:none" id="tooltip-wrapper">
+<div id="tooltip-content">
+</div>
+</div>
+<iframe style="display:none;height:0;width:0" id="link-preview-iframe" src="">
+</iframe>
+<script>var opacityTimeout,contentTimeout,transitionDurationMs=100,iframe=document.getElementById("link-preview-iframe"),tooltipWrapper=document.getElementById("tooltip-wrapper"),tooltipContent=document.getElementById("tooltip-content"),linkHistories={};function hideTooltip(){opacityTimeout=setTimeout((function(){tooltipWrapper.style.opacity=0,contentTimeout=setTimeout((function(){tooltipContent.innerHTML="",tooltipWrapper.style.display="none"}),transitionDurationMs+1)}),transitionDurationMs)}function showTooltip(t){var e=t.target,o=e.getClientRects()[e.getClientRects().length-1],i=window.pageYOffset||document.documentElement.scrollTop,n=t.target.getAttribute("href");if(-1===n.indexOf("http")||-1!==n.indexOf(window.location.host)){let t=n.split("#")[0];linkHistories[t]?(tooltipContent.innerHTML=linkHistories[t],tooltipWrapper.style.display="block",setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)):(iframe.src=t,iframe.onload=function(){tooltipContentHtml="",tooltipContentHtml+='<div style="font-weight: bold; unicode-bidi: plaintext;">'+iframe.contentWindow.document.querySelector("h1").innerHTML+"</div>",tooltipContentHtml+=iframe.contentWindow.document.querySelector(".content").innerHTML,tooltipContent.innerHTML=tooltipContentHtml,linkHistories[t]=tooltipContentHtml,tooltipWrapper.style.display="block",tooltipWrapper.scrollTop=0,setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),console.log(e),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)}),tooltipWrapper.style.left=o.left-tooltipWrapper.offsetWidth/2+o.width/2+"px",window.innerHeight-o.top<tooltipWrapper.offsetHeight?tooltipWrapper.style.top=o.top+i-tooltipWrapper.offsetHeight-10+"px":window.innerHeight-o.top>tooltipWrapper.offsetHeight&&(tooltipWrapper.style.top=o.top+i+35+"px"),o.left+o.width/2<tooltipWrapper.offsetWidth/2?tooltipWrapper.style.left="10px":document.body.clientWidth-o.left-o.width/2<tooltipWrapper.offsetWidth/2&&(tooltipWrapper.style.left=document.body.clientWidth-tooltipWrapper.offsetWidth-20+"px")}}function setupListeners(t){t.addEventListener("mouseleave",(function(t){hideTooltip()})),tooltipWrapper.addEventListener("mouseleave",(function(t){hideTooltip()})),t.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout),showTooltip(t)})),tooltipWrapper.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout)}))}window.addEventListener("load",(function(t){document.querySelectorAll(".internal-link").forEach(setupListeners),document.querySelectorAll(".backlink-card a").forEach(setupListeners)}))</script>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy HH:mm",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script defer="defer" src="/_vercel/insights/script.js"></script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
