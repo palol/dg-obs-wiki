@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://palol.github.io/dg-obs-wiki/">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://palol.github.io/dg-obs-wiki">
     <title>Digital Garden Docs (Community)</title>
-    <link href="https://palol.github.io/dg-obs-wiki//feed.xml" rel="self" >
-    <link href="https://palol.github.io/dg-obs-wiki/" >
-    <updated>2025-08-26T23:45:14Z</updated>
-    <id>https://palol.github.io/dg-obs-wiki/</id>
+    <link href="https://palol.github.io/dg-obs-wiki/feed.xml" rel="self" >
+    <link href="https://palol.github.io/dg-obs-wiki" >
+    <updated>2025-08-26T23:57:44Z</updated>
+    <id>https://palol.github.io/dg-obs-wiki</id>
         <entry>
             <title>
                 Troubleshooting
                 
             </title>
             <updated>2023-03-07T09:35:05.381Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//troubleshooting/</id>
+            <id>https://palol.github.io/dg-obs-wiki/troubleshooting/</id>
             <content type="html">
                 &lt;blockquote&gt;
 &lt;p&gt;[!WARNING] Netlify Issues when deploying a new site&lt;br /&gt;
@@ -23,7 +23,7 @@ Most of the time this is due to the plugin not being updated before updating the
 &lt;/blockquote&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//troubleshooting/" >
+            <link href="https://palol.github.io/dg-obs-wiki/troubleshooting/" >
         </entry>
         <entry>
             <title>
@@ -31,7 +31,7 @@ Most of the time this is due to the plugin not being updated before updating the
                 
             </title>
             <updated>2023-09-26T19:08:08.004Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//getting-started/06-updating-the-template/</id>
+            <id>https://palol.github.io/dg-obs-wiki/getting-started/06-updating-the-template/</id>
             <content type="html">
                 &lt;h2 id=&quot;updating-the-template&quot; tabindex=&quot;-1&quot;&gt;Updating the template&lt;/h2&gt;
 &lt;p&gt;In the setting menu for the plugin there is, in addition to the previously mentioned settings, a setting with the name &amp;quot;Update site to latest template&amp;quot; with a button saying &amp;quot;Create PR&amp;quot;. Whenever this template receives any updates, this button can be used to update your site. It will create a new branch in your repo with the changes and create a Pull Request to your main branch. The plugin will present you with this URL in the setting view.&lt;/p&gt;
@@ -50,7 +50,7 @@ When you are ready you can use the &amp;quot;Merge pull request&amp;quot; button
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://palol.github.io/getting-started/05-other-settings/&quot;&gt;&amp;lt; Prev&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//getting-started/06-updating-the-template/" >
+            <link href="https://palol.github.io/dg-obs-wiki/getting-started/06-updating-the-template/" >
         </entry>
         <entry>
             <title>
@@ -58,7 +58,7 @@ When you are ready you can use the &amp;quot;Merge pull request&amp;quot; button
                 
             </title>
             <updated>2024-01-17T13:24:12.029Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//getting-started/05-other-settings/</id>
+            <id>https://palol.github.io/dg-obs-wiki/getting-started/05-other-settings/</id>
             <content type="html">
                 &lt;h2 id=&quot;slugify-note-url&quot; tabindex=&quot;-1&quot;&gt;Slugify Note URL&lt;/h2&gt;
 &lt;p&gt;The plugin &amp;quot;slugifies&amp;quot; your URLs by default. In essence this means that a note with the path &amp;quot;My Folder/My &lt;a href=&quot;http://note.md/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Note.md&lt;/a&gt;&amp;quot; will get the URL &amp;quot;my-folder/my-note&amp;quot;.&lt;br /&gt;
@@ -103,7 +103,7 @@ It also supports Regex groups, meaning you can use $1, $2 etc in the replacement
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://palol.github.io/getting-started/04-appearance-settings/&quot;&gt;&amp;lt; Prev&lt;/a&gt; | &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://palol.github.io/getting-started/06-updating-the-template/&quot;&gt;Next: Updating the template &amp;gt;&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//getting-started/05-other-settings/" >
+            <link href="https://palol.github.io/dg-obs-wiki/getting-started/05-other-settings/" >
         </entry>
         <entry>
             <title>
@@ -111,7 +111,7 @@ It also supports Regex groups, meaning you can use $1, $2 etc in the replacement
                 
             </title>
             <updated>2023-09-21T11:04:28.104Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//getting-started/04-appearance-settings/</id>
+            <id>https://palol.github.io/dg-obs-wiki/getting-started/04-appearance-settings/</id>
             <content type="html">
                 &lt;p&gt;The appearance settings can be accessed in the settings menu:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://palol.github.io/img/user/img/CleanShot%202022-11-13%20at%2013.54.28@2x.png&quot; alt=&quot;CleanShot 2022-11-13 at 13.54.28@2x.png&quot; /&gt;&lt;/p&gt;
@@ -154,7 +154,7 @@ If you want it to instead be displayed in a 24h format, you can use: &lt;code&gt
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://palol.github.io/getting-started/03-note-settings/&quot;&gt;&amp;lt; Prev&lt;/a&gt; | &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://palol.github.io/getting-started/05-other-settings/&quot;&gt;Next: Other Settings &amp;gt;&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//getting-started/04-appearance-settings/" >
+            <link href="https://palol.github.io/dg-obs-wiki/getting-started/04-appearance-settings/" >
         </entry>
         <entry>
             <title>
@@ -162,7 +162,7 @@ If you want it to instead be displayed in a 24h format, you can use: &lt;code&gt
                 
             </title>
             <updated>2023-10-12T15:12:56.674Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//getting-started/03-note-settings/</id>
+            <id>https://palol.github.io/dg-obs-wiki/getting-started/03-note-settings/</id>
             <content type="html">
                 &lt;p&gt;By default the website is very simple, simply showing your note content, and a navbar at the top. But the plugin also support features like backlinks, local graph and search.&lt;/p&gt;
 &lt;p&gt;All such settings are available in the &amp;quot;Note Settings&amp;quot; dialog. To edit them, got to Obsidian Settings &amp;gt; Digital Garden &amp;gt; Note Settings and click the &amp;quot;Edit&amp;quot; button as pictured below.&lt;/p&gt;
@@ -227,7 +227,7 @@ If search is enabled, clicking on a tag will bring up the search box and show al
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://palol.github.io/getting-started/02-commands/&quot;&gt;&amp;lt; Prev&lt;/a&gt; | &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://palol.github.io/getting-started/04-appearance-settings/&quot;&gt;Next: Appearance Settings &amp;gt;&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//getting-started/03-note-settings/" >
+            <link href="https://palol.github.io/dg-obs-wiki/getting-started/03-note-settings/" >
         </entry>
         <entry>
             <title>
@@ -235,7 +235,7 @@ If search is enabled, clicking on a tag will bring up the search box and show al
                 
             </title>
             <updated>2023-03-17T13:40:54.777Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//getting-started/02-commands/</id>
+            <id>https://palol.github.io/dg-obs-wiki/getting-started/02-commands/</id>
             <content type="html">
                 &lt;h3 id=&quot;publish-single-note&quot; tabindex=&quot;-1&quot;&gt;Publish Single Note&lt;/h3&gt;
 &lt;p&gt;Will publish the currently active note, and only this. &lt;code&gt;dg-publish: true&lt;/code&gt; must be set on the active note.&lt;/p&gt;
@@ -259,7 +259,7 @@ Make sure you have the correct Base URL in your settings, so that the copied URL
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://palol.github.io/getting-started/01-getting-started/&quot;&gt;&amp;lt; Prev&lt;/a&gt; | &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://palol.github.io/getting-started/03-note-settings/&quot;&gt;Next: Note Settings &amp;gt;&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//getting-started/02-commands/" >
+            <link href="https://palol.github.io/dg-obs-wiki/getting-started/02-commands/" >
         </entry>
         <entry>
             <title>
@@ -267,7 +267,7 @@ Make sure you have the correct Base URL in your settings, so that the copied URL
                 
             </title>
             <updated>2023-10-12T15:08:06.699Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//getting-started/01-getting-started/</id>
+            <id>https://palol.github.io/dg-obs-wiki/getting-started/01-getting-started/</id>
             <content type="html">
                 &lt;p&gt;The initial setup takes a couple of minutes, but when you&#39;re done you&#39;ll have a digital garden in which you are in control of every part of it, and can customize it as you see fit. Which is what makes digital gardens so delightful.&lt;/p&gt;
 &lt;ol&gt;
@@ -350,7 +350,7 @@ It should look something like this:&lt;br /&gt;
 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://palol.github.io/getting-started/02-commands/&quot;&gt;Next: Commands &amp;gt;&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//getting-started/01-getting-started/" >
+            <link href="https://palol.github.io/dg-obs-wiki/getting-started/01-getting-started/" >
         </entry>
         <entry>
             <title>
@@ -358,7 +358,7 @@ It should look something like this:&lt;br /&gt;
                 
             </title>
             <updated>2023-03-21T16:04:45.747Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//features/</id>
+            <id>https://palol.github.io/dg-obs-wiki/features/</id>
             <content type="html">
                 &lt;p&gt;You can enable the following features in your digital garden, in the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://palol.github.io/getting-started/03-note-settings/&quot;&gt;note settings&lt;/a&gt;:&lt;/p&gt;
 &lt;ul&gt;
@@ -530,7 +530,7 @@ Obsidian specific features like linking to other notes inside the drawings are c
 &lt;h2 id=&quot;footnotes&quot; tabindex=&quot;-1&quot;&gt;Footnotes&lt;/h2&gt;
 &lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;There is a footnote here [^1]
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;There is a footnote here &lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://palol.github.io/dg-obs-wiki/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;There is a footnote here &lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://palol.github.io/dg-obs-wiki#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id=&quot;checkboxes&quot; tabindex=&quot;-1&quot;&gt;Checkboxes&lt;/h2&gt;
 &lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;- [ ] Uncheckd
@@ -555,13 +555,13 @@ For the dates to work properly, you need to enable the &lt;a class=&quot;interna
 &lt;hr class=&quot;footnotes-sep&quot; /&gt;
 &lt;section class=&quot;footnotes&quot;&gt;
 &lt;ol class=&quot;footnotes-list&quot;&gt;
-&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Here are some extra information in a footnote &lt;a href=&quot;https://palol.github.io/dg-obs-wiki/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Here are some extra information in a footnote &lt;a href=&quot;https://palol.github.io/dg-obs-wiki#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//features/" >
+            <link href="https://palol.github.io/dg-obs-wiki/features/" >
         </entry>
         <entry>
             <title>
@@ -569,7 +569,7 @@ For the dates to work properly, you need to enable the &lt;a class=&quot;interna
                 
             </title>
             <updated>2023-01-06T09:37:29.126Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//example-pages/transcluded-document/</id>
+            <id>https://palol.github.io/dg-obs-wiki/example-pages/transcluded-document/</id>
             <content type="html">
                 &lt;p&gt;This is a transcluded note.&lt;/p&gt;
 &lt;p id=&quot;02502a&quot;&gt;This is a block in a transcluded document&lt;/p&gt;
@@ -578,7 +578,7 @@ For the dates to work properly, you need to enable the &lt;a class=&quot;interna
 &lt;h4 id=&quot;this-is-a-subheader&quot; tabindex=&quot;-1&quot;&gt;This is a subheader&lt;/h4&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//example-pages/transcluded-document/" >
+            <link href="https://palol.github.io/dg-obs-wiki/example-pages/transcluded-document/" >
         </entry>
         <entry>
             <title>
@@ -586,7 +586,7 @@ For the dates to work properly, you need to enable the &lt;a class=&quot;interna
                 
             </title>
             <updated>2023-09-21T08:44:54.094Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//example-pages/simple-page/</id>
+            <id>https://palol.github.io/dg-obs-wiki/example-pages/simple-page/</id>
             <content type="html">
                 &lt;p&gt;A page where local graph, search, backlinks, file tree, home link and table of content is disabled.&lt;/p&gt;
 &lt;p&gt;Ideal to use if you want an easy note sharing solution without all the extra bells and whistles.&lt;/p&gt;
@@ -598,7 +598,7 @@ After introducing &lt;a href=&quot;https://help.obsidian.md/Editing+and+formatti
 &lt;/blockquote&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//example-pages/simple-page/" >
+            <link href="https://palol.github.io/dg-obs-wiki/example-pages/simple-page/" >
         </entry>
         <entry>
             <title>
@@ -606,13 +606,13 @@ After introducing &lt;a href=&quot;https://help.obsidian.md/Editing+and+formatti
                 
             </title>
             <updated>2023-01-09T18:19:09.541Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//example-pages/inline-tag-example/</id>
+            <id>https://palol.github.io/dg-obs-wiki/example-pages/inline-tag-example/</id>
             <content type="html">
                 &lt;p&gt;This note has an inline tag, and no tags in frontmatter.&lt;/p&gt;
 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#exampletag&quot;&gt;#exampletag&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//example-pages/inline-tag-example/" >
+            <link href="https://palol.github.io/dg-obs-wiki/example-pages/inline-tag-example/" >
         </entry>
         <entry>
             <title>
@@ -620,14 +620,14 @@ After introducing &lt;a href=&quot;https://help.obsidian.md/Editing+and+formatti
                 
             </title>
             <updated>2023-01-09T18:26:14.699Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//example-pages/frontmatter-tag-example/</id>
+            <id>https://palol.github.io/dg-obs-wiki/example-pages/frontmatter-tag-example/</id>
             <content type="html">
                 &lt;p&gt;This note has tags in the frontmatter, but no inline tags. For frontmatter tags to show up, you need to enable &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://palol.github.io/getting-started/03-note-settings/#show-tags&quot;&gt;show tags in the note settings&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The frontmatter for this note looks like this:&lt;br /&gt;
 &lt;img src=&quot;https://palol.github.io/img/user/img/CleanShot%202023-01-09%20at%2019.17.47.png&quot; alt=&quot;CleanShot 2023-01-09 at 19.17.47.png&quot; /&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//example-pages/frontmatter-tag-example/" >
+            <link href="https://palol.github.io/dg-obs-wiki/example-pages/frontmatter-tag-example/" >
         </entry>
         <entry>
             <title>
@@ -635,7 +635,7 @@ After introducing &lt;a href=&quot;https://help.obsidian.md/Editing+and+formatti
                 
             </title>
             <updated>2025-02-04T14:45:16.401Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//</id>
+            <id>https://palol.github.io/dg-obs-wiki/</id>
             <content type="html">
                 &lt;h1 style=&quot;font-size: 128px&quot;&gt;🏡&lt;/h1&gt;
 &lt;h1 id=&quot;obsidian-digital-garden&quot; tabindex=&quot;-1&quot;&gt;Obsidian Digital Garden&lt;/h1&gt;
@@ -703,7 +703,7 @@ Have a look at &lt;a href=&quot;https://obsidian-gallery.craftengineer.com/&quot
 &lt;/div&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//" >
+            <link href="https://palol.github.io/dg-obs-wiki/" >
         </entry>
         <entry>
             <title>
@@ -711,7 +711,7 @@ Have a look at &lt;a href=&quot;https://obsidian-gallery.craftengineer.com/&quot
                 
             </title>
             <updated>2025-02-10T15:31:09.197Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//advanced/tips-and-tricks/</id>
+            <id>https://palol.github.io/dg-obs-wiki/advanced/tips-and-tricks/</id>
             <content type="html">
                 &lt;p&gt;Here are a collection and tips and tricks that can be of use when publishing your notes.&lt;/p&gt;
 &lt;h2 id=&quot;publish-excalidrawing&quot; tabindex=&quot;-1&quot;&gt;Publish excalidrawing&lt;/h2&gt;
@@ -788,7 +788,7 @@ The note will load slowly, and you can get an error from GitHub when trying to p
 &lt;p&gt;The garden will automatically find text that looks like URLs and make them clickable automatically. If, for some reason, you do not want that you can follow the instructions given in &lt;a href=&quot;https://github.com/oleeskild/obsidian-digital-garden/issues/317#issuecomment-2647525906&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;this comment&lt;/a&gt; to turn it off.&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//advanced/tips-and-tricks/" >
+            <link href="https://palol.github.io/dg-obs-wiki/advanced/tips-and-tricks/" >
         </entry>
         <entry>
             <title>
@@ -796,13 +796,13 @@ The note will load slowly, and you can get an error from GitHub when trying to p
                 
             </title>
             <updated>2022-12-15T19:48:03.648Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//advanced/roadmap/</id>
+            <id>https://palol.github.io/dg-obs-wiki/advanced/roadmap/</id>
             <content type="html">
                 &lt;p&gt;This plugin is under active development. Upcoming features are tracked in the following Kanban board on GitHub:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/users/oleeskild/projects/1&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://github.com/users/oleeskild/projects/1&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//advanced/roadmap/" >
+            <link href="https://palol.github.io/dg-obs-wiki/advanced/roadmap/" >
         </entry>
         <entry>
             <title>
@@ -810,7 +810,7 @@ The note will load slowly, and you can get an error from GitHub when trying to p
                 
             </title>
             <updated>2023-09-25T20:49:09.512Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//advanced/note-specific-settings/</id>
+            <id>https://palol.github.io/dg-obs-wiki/advanced/note-specific-settings/</id>
             <content type="html">
                 &lt;h2 id=&quot;title&quot; tabindex=&quot;-1&quot;&gt;Title&lt;/h2&gt;
 &lt;p&gt;If you want to use a custom page title instead of the name of your note, you can use the &amp;quot;title&amp;quot; attribute in frontmatter. This allows you to use characters that are not allowed to use in filenames. (Ex: &amp;quot;:&amp;quot;, &amp;quot;/&amp;quot;, &amp;quot;|&amp;quot;)&lt;/p&gt;
@@ -917,7 +917,7 @@ body.backlinks-note-icon .backlink[data-note-icon=&amp;quot;stone&amp;quot;]::be
 &lt;/code&gt;&lt;/pre&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//advanced/note-specific-settings/" >
+            <link href="https://palol.github.io/dg-obs-wiki/advanced/note-specific-settings/" >
         </entry>
         <entry>
             <title>
@@ -925,7 +925,7 @@ body.backlinks-note-icon .backlink[data-note-icon=&amp;quot;stone&amp;quot;]::be
                 
             </title>
             <updated>2023-06-19T11:01:24.117Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//advanced/hosting-alternatives/</id>
+            <id>https://palol.github.io/dg-obs-wiki/advanced/hosting-alternatives/</id>
             <content type="html">
                 &lt;p&gt;While the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://palol.github.io/getting-started/01-getting-started/&quot;&gt;01 Getting started&lt;/a&gt; uses Vercel as the hosting platform, the site can be run on any other hosting platform. Some alternatives are listed below.&lt;/p&gt;
 &lt;h2 id=&quot;self-hosting&quot; tabindex=&quot;-1&quot;&gt;Self hosting&lt;/h2&gt;
@@ -953,7 +953,7 @@ Then go to &lt;a href=&quot;https://vercel.com/new&quot; target=&quot;_blank&quo
 You should then be able to create an account with your hosting provider of choice and connect it to your newly created repository. If the setups asks for an install command, output directory or build command, use those that are visible in the picture from Vercel above.&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//advanced/hosting-alternatives/" >
+            <link href="https://palol.github.io/dg-obs-wiki/advanced/hosting-alternatives/" >
         </entry>
         <entry>
             <title>
@@ -961,7 +961,7 @@ You should then be able to create an account with your hosting provider of choic
                 
             </title>
             <updated>2023-07-11T14:02:34.887Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//advanced/guides-and-how-tos/adding-comments/</id>
+            <id>https://palol.github.io/dg-obs-wiki/advanced/guides-and-how-tos/adding-comments/</id>
             <content type="html">
                 &lt;p&gt;Using &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://palol.github.io/advanced/adding-custom-components/#how-does-it-work&quot;&gt;custom components&lt;/a&gt; you can add a comment system.&lt;/p&gt;
 &lt;p&gt;Here are some alternatives that should work quite well:&lt;/p&gt;
@@ -973,7 +973,7 @@ You should then be able to create an account with your hosting provider of choic
 &lt;p&gt;You can see an example of a garden &lt;a href=&quot;https://github.com/uroybd/topobon/blob/main/src/site/_includes/components/user/notes/footer/001-comment.njk&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;using disqus here&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//advanced/guides-and-how-tos/adding-comments/" >
+            <link href="https://palol.github.io/dg-obs-wiki/advanced/guides-and-how-tos/adding-comments/" >
         </entry>
         <entry>
             <title>
@@ -981,13 +981,13 @@ You should then be able to create an account with your hosting provider of choic
                 
             </title>
             <updated>2023-07-11T13:42:42.123Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//advanced/guides-and-how-tos/adding-analytics/</id>
+            <id>https://palol.github.io/dg-obs-wiki/advanced/guides-and-how-tos/adding-analytics/</id>
             <content type="html">
                 &lt;h2 id=&quot;vercel&quot; tabindex=&quot;-1&quot;&gt;Vercel&lt;/h2&gt;
 &lt;p&gt;If you are using Vercel, you can easily add analytics to your site by following the instructions in &lt;a href=&quot;https://github.com/oleeskild/obsidian-digital-garden/discussions/195&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;this GitHub discussion&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//advanced/guides-and-how-tos/adding-analytics/" >
+            <link href="https://palol.github.io/dg-obs-wiki/advanced/guides-and-how-tos/adding-analytics/" >
         </entry>
         <entry>
             <title>
@@ -995,7 +995,7 @@ You should then be able to create an account with your hosting provider of choic
                 
             </title>
             <updated>2024-01-17T13:24:27.689Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//advanced/fine-grained-access-token/</id>
+            <id>https://palol.github.io/dg-obs-wiki/advanced/fine-grained-access-token/</id>
             <content type="html">
                 &lt;p&gt;Recently GitHub launched a more secure way to create an access token. Previously you would need to create a token that had access to all your repos. This isn&#39;t very secure, as a compromised token will give access to all of your repos.&lt;/p&gt;
 &lt;p&gt;It&#39;s a bit more hassle, but you can now create an access token that only have access to the digital garden repo. This is the recommended way to generate your token if you have more repos on your accounts.&lt;/p&gt;
@@ -1004,7 +1004,7 @@ You should then be able to create an account with your hosting provider of choic
 &lt;p&gt;&lt;img src=&quot;https://palol.github.io/img/user/img/CleanShot%202022-12-15%20at%2022.10.03@2x.png&quot; alt=&quot;CleanShot 2022-12-15 at 22.10.03@2x.png&quot; /&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//advanced/fine-grained-access-token/" >
+            <link href="https://palol.github.io/dg-obs-wiki/advanced/fine-grained-access-token/" >
         </entry>
         <entry>
             <title>
@@ -1012,7 +1012,7 @@ You should then be able to create an account with your hosting provider of choic
                 
             </title>
             <updated>2023-03-21T16:03:49.624Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//advanced/dataview-queries/</id>
+            <id>https://palol.github.io/dg-obs-wiki/advanced/dataview-queries/</id>
             <content type="html">
                 &lt;p&gt;The plugin supports publishing dataview query result. Simply publish a page containing a query. The plugin will render the result as it is at the time of publishing. If the result changes, you will need to republish that note.&lt;/p&gt;
 &lt;p&gt;It supports all query types: dataview, dataviewjs, inline dataview and inline dataviewjs.&lt;/p&gt;
@@ -1020,7 +1020,7 @@ You should then be able to create an account with your hosting provider of choic
 &lt;p&gt;You need to have version 0.5.39 or later of the dataview plugin installed for this to work.&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//advanced/dataview-queries/" >
+            <link href="https://palol.github.io/dg-obs-wiki/advanced/dataview-queries/" >
         </entry>
         <entry>
             <title>
@@ -1028,7 +1028,7 @@ You should then be able to create an account with your hosting provider of choic
                 
             </title>
             <updated>2022-11-13T16:09:15.032Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//advanced/content-customization/</id>
+            <id>https://palol.github.io/dg-obs-wiki/advanced/content-customization/</id>
             <content type="html">
                 &lt;h2 id=&quot;custom-image-width&quot; tabindex=&quot;-1&quot;&gt;Custom image width&lt;/h2&gt;
 &lt;p&gt;The plugin supports setting width of images the same way you would do in Obsidian.&lt;/p&gt;
@@ -1060,7 +1060,7 @@ If you have a note title &lt;code&gt;My Note&lt;/code&gt; , but want a link to d
 &lt;p&gt;They behave the same as an image. If you transclude something into a document, and publish that document, everything that is transcluded in it will be published as if it was part of that note.&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//advanced/content-customization/" >
+            <link href="https://palol.github.io/dg-obs-wiki/advanced/content-customization/" >
         </entry>
         <entry>
             <title>
@@ -1068,13 +1068,13 @@ If you have a note title &lt;code&gt;My Note&lt;/code&gt; , but want a link to d
                 
             </title>
             <updated>2023-03-09T14:03:54.208Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//advanced/configure-build-pipeline/</id>
+            <id>https://palol.github.io/dg-obs-wiki/advanced/configure-build-pipeline/</id>
             <content type="html">
                 &lt;p&gt;The digital garden uses 11ty when building the site, and markdown-it for rendering markdown to html.&lt;br /&gt;
 If you want to configure either the 11ty build pipeline or the markdown rendering engine you can do so in the &lt;code&gt;src/helpers/userSetup.js&lt;/code&gt; file. There should be two functions there: &lt;code&gt;useMarkdownSetup(md)&lt;/code&gt; and &lt;code&gt;userEleventySetup(eleventyConfig)&lt;/code&gt;. These will be called after all the default setup has been processed, and allows you to do modifications on both the eleventy config and the markdown-it instance. For examples on how these are configured, you can have a look in the &lt;code&gt;.eleventy.js&lt;/code&gt; file in the root directory of your site.&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//advanced/configure-build-pipeline/" >
+            <link href="https://palol.github.io/dg-obs-wiki/advanced/configure-build-pipeline/" >
         </entry>
         <entry>
             <title>
@@ -1082,7 +1082,7 @@ If you want to configure either the 11ty build pipeline or the markdown renderin
                 
             </title>
             <updated>2022-11-21T14:27:31.692Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//advanced/comparison-to-other-solutions/</id>
+            <id>https://palol.github.io/dg-obs-wiki/advanced/comparison-to-other-solutions/</id>
             <content type="html">
                 &lt;h2 id=&quot;pros&quot; tabindex=&quot;-1&quot;&gt;Pros&lt;/h2&gt;
 &lt;p&gt;One of the main differences between this plugin and other popular digital gardens is that it integrates with Obsidian via a plugin. Disregarding the initial setup, you&#39;ll never have to touch Git. (Unless you want to.) Publishing a new note is as simple as using the &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://palol.github.io/getting-started/02-commands/#publish-single-note&quot;&gt;publish single note command&lt;/a&gt;.&lt;/p&gt;
@@ -1094,7 +1094,7 @@ If you want to configure either the 11ty build pipeline or the markdown renderin
 &lt;p&gt;But if you&#39;ll ever decide to switch to another tool, all your files are still available as plain text, so switching shouldn&#39;t be too hard.&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//advanced/comparison-to-other-solutions/" >
+            <link href="https://palol.github.io/dg-obs-wiki/advanced/comparison-to-other-solutions/" >
         </entry>
         <entry>
             <title>
@@ -1102,7 +1102,7 @@ If you want to configure either the 11ty build pipeline or the markdown renderin
                 
             </title>
             <updated>2023-02-17T16:16:56.750Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//advanced/css-customization/</id>
+            <id>https://palol.github.io/dg-obs-wiki/advanced/css-customization/</id>
             <content type="html">
                 &lt;h2 id=&quot;dynamic-css-scss&quot; tabindex=&quot;-1&quot;&gt;Dynamic CSS/SCSS&lt;/h2&gt;
 &lt;p&gt;Any css/scss files placed under &lt;code&gt;src/site/styles/user&lt;/code&gt; will automatically be linked into the head right after all other styling. Meaning that the styling added here will take presedence over everything else.&lt;/p&gt;
@@ -1121,7 +1121,7 @@ Previously the only way to add custom styling to the site was to add styling to 
 &lt;/blockquote&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//advanced/css-customization/" >
+            <link href="https://palol.github.io/dg-obs-wiki/advanced/css-customization/" >
         </entry>
         <entry>
             <title>
@@ -1129,7 +1129,7 @@ Previously the only way to add custom styling to the site was to add styling to 
                 
             </title>
             <updated>2023-09-12T10:52:17.949Z</updated>
-            <id>https://palol.github.io/dg-obs-wiki//advanced/adding-custom-components/</id>
+            <id>https://palol.github.io/dg-obs-wiki/advanced/adding-custom-components/</id>
             <content type="html">
                 &lt;blockquote&gt;
 &lt;p&gt;[!FAQ] Configuring build pipelines&lt;br /&gt;
@@ -1264,6 +1264,6 @@ Remember that, the paths for a given slot are always sorted by filename. Therefo
 &lt;p&gt;To get started and see a live example, take a look at GitHub user &lt;a href=&quot;https://github.com/uroybd/topobon/tree/main/src/site/_includes/components/user&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;uroybd&lt;/a&gt; &#39;s garden, &lt;a href=&quot;https://topobon.utsob.me/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;topobon&lt;/a&gt; . He uses components to add a theme switcher and a disqus comment section among other things. You can take a look at how he&#39;s implemented it &lt;a href=&quot;https://github.com/uroybd/topobon/tree/main/src/site/_includes/components/user&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://palol.github.io/dg-obs-wiki//advanced/adding-custom-components/" >
+            <link href="https://palol.github.io/dg-obs-wiki/advanced/adding-custom-components/" >
         </entry>
 </feed>
